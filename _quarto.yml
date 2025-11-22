@@ -3,7 +3,6 @@ project:
   output-dir: .
   resources:
     - scripts.js
-    - includes/scripts.html
 
 website:
   title: "Michelle Marie Ricart — MBA Portfolio"
@@ -21,19 +20,17 @@ website:
       - href: contact.qmd
         text: Contact
     right:
-      - text: Reflection
-        href: reflection.qmd
-      - text: Appendix
-        href: appendix.qmd
-  reader-mode: true
+      - href: reflection.qmd
+        text: Reflection
+      - href: appendix.qmd
+        text: Appendix
 
 format:
   html:
     theme: litera
     css: styles.scss
     toc: true
-    smooth-scroll: true
-    anchor-sections: true
-    embed-resources: true
-    include-after-body: includes.html  
+    toc-location: right
+    include-after-body: includes/scripts.html
+
 

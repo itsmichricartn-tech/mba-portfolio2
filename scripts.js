@@ -1,20 +1,21 @@
-// scripts.js — revela elementos al hacer scroll (animaciones suaves)
-document.addEventListener("DOMContentLoaded", () => {
-  const els = document.querySelectorAll(".reveal");
+document.addEventListener('DOMContentLoaded', () => {
+  const els = document.querySelectorAll('.reveal');
+
+  // Si el browser no soporta IntersectionObserver, muestra todo
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(el => el.classList.add('visible'));
+    return;
+  }
+
   const io = new IntersectionObserver((entries) => {
-    entries.forEach((e) => {
+    entries.forEach(e => {
       if (e.isIntersecting) {
-        e.target.classList.add("is-visible");
+        e.target.classList.add('visible');
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
 
-  els.forEach((el, i) => {
-    // escalona la entrada automáticamente (stagger)
-    if (!el.style.getPropertyValue("--delay")) {
-      el.style.setProperty("--delay", (i * 60) + "ms");
-    }
-    io.observe(el);
-  });
+  els.forEach(el => io.observe(el));
 });
+

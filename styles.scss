@@ -98,9 +98,19 @@ em{ color: var(--ink-muted); }
 .footer-cta{ display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.75rem; }
 
 /* 11) Animaciones (trabajan con tu scripts.js que añade .visible) */
-.reveal{ opacity:0; transform: translateY(10px); transition: opacity .55s ease, transform .55s ease; }
-.reveal.visible{ opacity:1; transform:none; }
-.reveal-up{ }
+/* Fallback: si NO hay JS, que se vea todo */
+.reveal { opacity: 1; transform: none; }
+
+/* Solo ocultamos para animar cuando sí hay JS */
+.js .reveal { 
+  opacity: 0; 
+  transform: translateY(10px); 
+  transition: opacity .55s ease, transform .55s ease; 
+}
+.js .reveal.visible { 
+  opacity: 1; 
+  transform: none; 
+}
 
 /* 12) Ajustes por página (opcional) */
 body.home .soft-hero{ margin-top:.25rem; }
