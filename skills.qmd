@@ -28,7 +28,6 @@ body-classes: skills
   </ul>
   <p class="reveal reveal-up" style="--delay:220ms; margin-top:.5rem;">
     <a class="btn btn-outline-secondary" href="MichelleRicart_Resume.pdf" target="_blank" rel="noopener" download>
-      See full details in my Resume (PDF)
     </a>
   </p>
 </section>
@@ -38,7 +37,7 @@ body-classes: skills
   <ul class="reveal reveal-up" style="--delay:120ms;">
     <li><strong>Microsoft Excel</strong>, <strong>Word</strong>, <strong>Outlook</strong></li>
     <li><strong>Quarto/Markdown</strong> for documentation and reporting</li>
-    <li>Basic data visualization (charts, dashboards)</li>
+    <li><strong>Basic data visualization</strong> (charts, dashboards)</li>
   </ul>
 </section>
 

@@ -15,7 +15,6 @@ Below are selected projects. Each includes a short overview, my role, and outcom
 **Overview:** Used DISC, Driving Forces, and Competencies to align roles and development paths.  
 **Role:** Analyst and presenter.  
 **Outcome:** Clear role-fit insights and a learning plan mapped to goals.  
-[PDF (add link)](#){.btn .btn-sm .btn-outline-secondary target="_blank" rel="noopener"}
 :::
 
 ::: {.card .lift .reveal .reveal-up style="--delay:140ms"}
@@ -23,7 +22,6 @@ Below are selected projects. Each includes a short overview, my role, and outcom
 **Overview:** Multi-year plan with SMART metrics and 70-20-10 activities.  
 **Role:** Author — designed alternatives, risks, and milestones.  
 **Outcome:** Actionable roadmap and reflection framework.  
-[PDF (add link)](#){.btn .btn-sm .btn-outline-secondary target="_blank" rel="noopener"}
 :::
 
 ::: {.card .lift .reveal .reveal-up style="--delay:280ms"}
@@ -31,7 +29,6 @@ Below are selected projects. Each includes a short overview, my role, and outcom
 **Overview:** Quarto reports, strategy memos, and simple dashboards for class cases.  
 **Role:** Analyst and writer.  
 **Outcome:** Clear communication of findings; reproducible reports in Markdown.  
-[Repo (add link)](#){.btn .btn-sm .btn-outline-secondary target="_blank" rel="noopener"}
 :::
 
 </div>

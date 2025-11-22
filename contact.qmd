@@ -15,10 +15,8 @@ body-classes: contact
 ::: {.reveal .reveal-up style="--delay:220ms; display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem"}
 [Download Resume (PDF)](MichelleRicart_Resume.pdf){.btn .btn-primary target="_blank" rel="noopener" download}
 [Email me](mailto:itsmichricartn@gmail.com?subject=Contact%20from%20MBA%20portfolio&body=Hi%20Michelle,%20I%27d%20like%20to%20connect%20about...){.btn .btn-outline-secondary aria-label="Write me an email now"}
-[View LinkedIn](https://www.linkedin.com/in/michelle-marie-ricart-naranjo-042628199/){.btn .btn-outline-secondary target="_blank" rel="noopener"}
+[View LinkedIn](https://www.linkedin.com/in/michelle-marie-ricart-naranjo-042628199/)
 :::
 
 ::: {.reveal .reveal-up style="--delay:320ms; margin-top:1rem"}
-Prefer a quick intro? Send me a short note with your topic and availability — I’ll get back to you promptly.
-:::
 :::

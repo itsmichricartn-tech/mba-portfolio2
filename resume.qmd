@@ -4,8 +4,7 @@
 - **Pathway III (Proficiency)** — International Language Academy of Canada (ILAC), Jul 2024
 - **B.Sc. in Industrial Psychology** — Universidad Pedro Henríquez Ureña (UNPHU), Apr 2023  
 
-[Download Resume (PDF)](MichelleRicart_Resume.pdf){.btn .btn-primary target="_blank" rel="noopener" download}
-:::
+[Download Resume (PDF)](MichelleRicart_Resume.pdf)
 
 ::: {.soft-hero .reveal .reveal-up style="margin-top:1rem;"}
 ## Professional Experience
