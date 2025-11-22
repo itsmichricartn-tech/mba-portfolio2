@@ -1,6 +1,4 @@
-/* ===== Pastel MBA mini-theme (seguro) ===== */
-
-/* Paleta base */
+/* ===== Pastel MBA mini-theme ===== */
 :root{
   --brand-primary:#6C7CFF;
   --brand-accent:#F6B8D5;
@@ -12,10 +10,9 @@
   --shadow:0 16px 40px rgba(31,41,55,.07);
 }
 
-/* Fondo y texto */
 html,body{ background:var(--bg-soft); color:var(--ink); }
 
-/* Navbar con gradiente pastel */
+/* Navbar */
 .navbar{
   background: linear-gradient(90deg, #5F73FF, #9DAAFE);
   box-shadow: 0 4px 24px rgba(0,0,0,.05);
@@ -23,7 +20,7 @@ html,body{ background:var(--bg-soft); color:var(--ink); }
 .navbar .navbar-brand, .navbar .nav-link{ color:#fff !important; }
 .navbar .nav-link.active, .navbar .nav-link:hover{ color:#fff !important; }
 
-/* Tarjeta suave para secciones principales */
+/* Secciones suaves */
 .soft-hero{
   background:
     radial-gradient(900px 900px at 12% 20%, rgba(159,172,255,.25), transparent 60%),
@@ -36,7 +33,7 @@ html,body{ background:var(--bg-soft); color:var(--ink); }
   margin: 1rem 0 1.25rem 0;
 }
 
-/* FOTO: tamaño fijo (si no entra CSS, pondremos width en Markdown también) */
+/* Foto de perfil (redonda, tamaño fijo) */
 .headshot{
   width:148px; height:148px; object-fit:cover; border-radius:9999px;
   display:block; margin:0 auto 1rem auto; border:6px solid #fff;
@@ -57,13 +54,7 @@ html,body{ background:var(--bg-soft); color:var(--ink); }
   background: rgba(108,124,255,.12); color:#334155; border:1px solid #E5E7EB;
 }
 
-/* Cards y timeline */
-.cards{ display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
-.card{ background:var(--surface); border:1px solid var(--ring); border-radius:var(--radius); padding:1.1rem; box-shadow:var(--shadow); }
-.timeline{ display:grid; gap:1rem; }
-.timeline-item{ background:var(--surface); border:1px solid var(--ring); border-left:5px solid var(--brand-primary); border-radius:14px; padding:1rem 1.1rem; box-shadow:var(--shadow); }
-
-/* ANIMACIÓN: fallback para que NUNCA quede vacío si el JS no carga */
-.reveal{ opacity:1; transform:none; }            /* visible por defecto */
-.js .reveal{ opacity:0; transform:translateY(10px); transition:opacity .55s, transform .55s; }
-.js .reveal.visible{ opacity:1; transform:none; }
+/* Fallback animaciones (que el contenido siempre se vea) */
+.reveal { opacity: 1; transform: none; }
+.js .reveal { opacity: 0; transform: translateY(10px); transition: opacity .55s, transform .55s; }
+.js .reveal.visible { opacity: 1; transform: none; }
