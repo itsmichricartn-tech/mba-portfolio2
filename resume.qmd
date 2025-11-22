@@ -1,77 +1,54 @@
----
-title: "Resume"
-body-classes: resume
----
+::: {.soft-hero .reveal .reveal-up}
+## Education
+- **MBA (in progress)** — University Canada West (UCW), Vancouver, BC
+- **Pathway III (Proficiency)** — International Language Academy of Canada (ILAC), Jul 2024
+- **B.Sc. in Industrial Psychology** — Universidad Pedro Henríquez Ureña (UNPHU), Apr 2023  
 
-<!-- ===== Education (hero) ===== -->
-<section class="soft-hero reveal reveal-up">
-  <h2>Education</h2>
-  <ul>
-    <li><strong>MBA (in progress)</strong> — University Canada West (UCW), Vancouver, BC</li>
-    <li><strong>Pathway III (Proficiency)</strong> — International Language Academy of Canada (ILAC), Jul 2024</li>
-    <li><strong>B.Sc. in Industrial Psychology</strong> — Universidad Pedro Henríquez Ureña (UNPHU), Apr 2023</li>
-  </ul>
+[Download Resume (PDF)](MichelleRicart_Resume.pdf){.btn .btn-primary target="_blank" rel="noopener" download}
+:::
 
-  <!-- Botón de descarga del CV -->
-  <a class="btn btn-primary" href="MichelleRicart_Resume.pdf" target="_blank" rel="noopener" download>
-    Download Resume (PDF)
-  </a>
-</section>
+::: {.soft-hero .reveal .reveal-up style="margin-top:1rem;"}
+## Professional Experience
 
-<!-- ===== Experience (timeline) ===== -->
-<section class="soft-hero reveal reveal-up" style="margin-top:1rem;">
-  <h2>Professional Experience</h2>
+::: {.timeline}
 
-  <div class="timeline">
+::: {.timeline-item .reveal .reveal-up}
+#### Compensation & Benefits Analyst — Shell Licensee (Santo Domingo, DR)
+*Dec 2021 – Sep 2024*
+- Responded to employee inquiries on benefits, payroll, and policies, improving service satisfaction.
+- Coordinated documentation with the Ministry of Labour; improved timeliness of certifications.
+- Prepared letters, contracts, and official communications with accuracy and standards.
+:::
 
-    <!-- HR — Shell -->
-    <div class="timeline-item reveal reveal-up">
-      <h4>Compensation & Benefits Analyst — Shell Licensee (Santo Domingo, DR)</h4>
-      <div><em>Dec 2021 – Sep 2024</em></div>
-      <ul>
-        <li>Responded to employee inquiries on benefits, payroll, and policies, improving service satisfaction.</li>
-        <li>Coordinated documentation with the Ministry of Labour; improved timeliness of certifications.</li>
-        <li>Prepared letters, contracts, and official communications with accuracy and standards.</li>
-      </ul>
-    </div>
+::: {.timeline-item .reveal .reveal-up style="--delay:120ms"}
+#### General Analyst — Shell Licensee (Santo Domingo, DR)
+*Dec 2021 – Aug 2024*
+- Supported recruitment, onboarding, and training logistics for positive new-hire experiences.
+- Delivered front-line support to employees and external partners.
+- Standardized communications and document control to ensure consistency.
+:::
 
-    <div class="timeline-item reveal reveal-up" style="--delay:120ms;">
-      <h4>General Analyst — Shell Licensee (Santo Domingo, DR)</h4>
-      <div><em>Dec 2021 – Aug 2024</em></div>
-      <ul>
-        <li>Supported recruitment, onboarding, and training logistics for positive new-hire experiences.</li>
-        <li>Delivered front-line support to employees and external partners.</li>
-        <li>Standardized communications and document control to ensure consistency.</li>
-      </ul>
-    </div>
+::: {.timeline-item .reveal .reveal-up style="--delay:240ms"}
+#### Culinary & Hospitality — Vancouver, Canada
+*2025*
+- **Cook, Guilt and Co** (Oct 2025 – Present): ensure ingredient quality; organize station; execute menu items and prep to standard.
+- **Line Cook, Six Acres** (Mar 2025 – May 2025): maintain quality control and cleanliness; complete assigned dishes and prep.
+- **Plater, Fed** (Mar 2025 – Sep 2025): accurate plating, portions, and presentation in a high-volume environment.
+:::
 
-    <!-- Culinary & Hospitality -->
-    <div class="timeline-item reveal reveal-up" style="--delay:240ms;">
-      <h4>Culinary & Hospitality — Vancouver, Canada</h4>
-      <div><em>2025</em></div>
-      <ul>
-        <li><strong>Cook, Guilt and Co</strong> (Oct 2025 – Present): ensure ingredient quality; organize station; execute menu items and prep to standard.</li>
-        <li><strong>Line Cook, Six Acres</strong> (Mar 2025 – May 2025): maintain quality control and cleanliness; complete assigned dishes and prep.</li>
-        <li><strong>Plater, Fed</strong> (Mar 2025 – Sep 2025): accurate plating, portions, and presentation in a high-volume environment.</li>
-      </ul>
-    </div>
+::: {.timeline-item .reveal .reveal-up style="--delay:360ms"}
+#### Stock Service — ZARA (Santo Domingo, DR)
+*Nov 2019 – Nov 2021*
+- Inventory, order prep, and ERP updates to maintain availability.
+:::
 
-    <!-- ZARA -->
-    <div class="timeline-item reveal reveal-up" style="--delay:360ms;">
-      <h4>Stock Service — ZARA (Santo Domingo, DR)</h4>
-      <div><em>Nov 2019 – Nov 2021</em></div>
-      <ul>
-        <li>Inventory, order prep, and ERP updates to maintain availability.</li>
-      </ul>
-    </div>
+:::
+:::
 
-  </div>
-</section>
+::: {.soft-hero .reveal .reveal-up style="margin-top:1rem;"}
+## Skills
+**People & Culture:** Compensation & Benefits, Employee Services, Onboarding, Internal Comms  
+**Tools:** Excel (dashboards), Word (official documents), Outlook (coordination)  
+**Professional:** Teamwork, Problem-Solving, Time Management, Attention to Detail
+:::
 
-<!-- ===== Skills (bloque corto) ===== -->
-<section class="soft-hero reveal reveal-up" style="margin-top:1rem;">
-  <h2>Skills</h2>
-  <p><strong>People & Culture:</strong> Compensation & Benefits, Employee Services, Onboarding, Internal Comms</p>
-  <p><strong>Tools:</strong> Excel (dashboards), Word (official documents), Outlook (coordination)</p>
-  <p><strong>Professional:</strong> Teamwork, Problem-Solving, Time Management, Attention to Detail</p>
-</section>
