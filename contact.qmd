@@ -4,7 +4,7 @@ title: "Contact"
 
 - 📍 Vancouver, BC, Canada  
 - ✉️ <a href="mailto:itsmichricartn@gmail.com">itsmichricartn@gmail.com</a>  
-- 🔗 <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn (add URL)</a>  
+- 🔗 <a href="https://www.linkedin.com/in/michelle-marie-ricart-naranjo-042628199/" target="_blank" rel="noopener">LinkedIn (add URL)</a>  
 - 📄 <a href="MichelleRicart_Resume.pdf" target="_blank" rel="noopener" download>Download Resume (PDF)</a>
 
-> Static sites cannot process forms by themselves; use a mailto link (as above) or connect a form service if needed.
+

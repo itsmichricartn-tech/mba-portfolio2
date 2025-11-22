@@ -6,9 +6,9 @@ image: headshot.jpg
 
 <div class="hero">
 <img src="headshot.jpg" alt="Professional headshot of Michelle Marie Ricart" class="headshot" />
-<h1>Michelle Marie Ricart</h1>
+<h1>Michelle Marie Ricart Naranjo</h1>
 <p><em>MBA Candidate · University Canada West (UCW) · Vancouver, BC</em></p>
-<p>People-centric professional with experience in <strong>Human Resources</strong> (Compensation & Benefits, employee services, onboarding) and recent roles in <strong>culinary operations</strong> in Vancouver. I value clarity, service, and reliable processes—turning information into simple, actionable decisions.</p>
+<p>I have a degree in people-oriented industrial psychology, with experience in <strong> human resources <strong>, mainly in the <strong>compensation and benefits <strong>  department, recruitment, and onboarding processes. I am currently developing my <strong>culinary <strong> skills in Vancouver, British Columbia.  I define myself by always prioritizing customer service, prioritizing clarity and reliability in processes, thereby positively transforming the decisions that can be made to have a positive impact on the future of companies and their operations. </p>
 <div class="footer-cta">
 <a class="btn btn-primary" href="resume.html" role="button">View Resume</a>
 <a class="btn btn-outline-secondary" href="projects.html" role="button">View Projects</a>
@@ -17,11 +17,18 @@ image: headshot.jpg
 </div>
 
 ## Highlights
-- 3+ years in HR at a Shell licensee (Dominican Republic) with focus on employee support and documentation.
-- Hands-on experience in fast-paced culinary environments—organization, teamwork, and quality execution.
-- Bilingual: Spanish & English.
+- More than 3 years of experience in Human Resources at Shell Dominican Republic, serving employees, internal and external clients, managing internal documentation, and creating monthly metrics.
+- Practices in the culinary field that require high speed, focused on organization, teamwork, and the preparation of food dishes with high quality standards.
+
+
+## Bilingual
+
+- Spanish (Native)
+- English (Second Language)
+
 
 ## Recent Focus
-- Leadership and people operations in multicultural contexts.
-- Building clear documentation and dashboards to inform decisions.
-- Iterating a professional brand and portfolio using Quarto and Markdown.
+- Personnel leadership in a multicultural approach.
+- Creation of clear documentation and quality control dashboards for decision-making.
+- Preparation and continuous development for my personal brand and professional career using the Quarto tool.
+

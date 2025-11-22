@@ -14,9 +14,9 @@ title: "Skills & Certifications"
 <span class="badge">Customer Service</span>
 <span class="badge">Spanish & English</span>
 
-### Certifications (add details/dates)
-- FoodSafe Level 1 — *Add date if completed*
-- Other HR/People Ops coursework — *Add provider and date*
+### Certifications 
+- FoodSafe Level 1 — *June 2025*
+- Other HR/People Ops coursework — *January 2023*
 
 ### Tools & Methods
 - Microsoft Excel, Word, Outlook  

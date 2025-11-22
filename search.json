@@ -4,7 +4,7 @@
     "href": "skills.html",
     "title": "Skills & Certifications",
     "section": "",
-    "text": "Core Skills\nCompensation & Benefits Employee Services Onboarding Internal Communications Excel (dashboards) Time Management Problem-Solving Teamwork Customer Service Spanish & English\n\n\nCertifications (add details/dates)\n\nFoodSafe Level 1 — Add date if completed\nOther HR/People Ops coursework — Add provider and date\n\n\n\nTools & Methods\n\nMicrosoft Excel, Word, Outlook\n\nQuarto/Markdown for documentation and reporting\n\nBasic data visualization (charts, dashboards)"
+    "text": "Core Skills\nCompensation & Benefits Employee Services Onboarding Internal Communications Excel (dashboards) Time Management Problem-Solving Teamwork Customer Service Spanish & English\n\n\nCertifications\n\nFoodSafe Level 1 — June 2025\nOther HR/People Ops coursework — January 2023\n\n\n\nTools & Methods\n\nMicrosoft Excel, Word, Outlook\n\nQuarto/Markdown for documentation and reporting\n\nBasic data visualization (charts, dashboards)"
   },
   {
     "objectID": "reflection.html",
@@ -18,21 +18,28 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "MBA Candidate · University Canada West (UCW) · Vancouver, BC\n\n\nPeople-centric professional with experience in Human Resources (Compensation & Benefits, employee services, onboarding) and recent roles in culinary operations in Vancouver. I value clarity, service, and reliable processes—turning information into simple, actionable decisions.\n\n\nView Resume View Projects Appendix"
+    "text": "MBA Candidate · University Canada West (UCW) · Vancouver, BC\n\n\nI have a degree in people-oriented industrial psychology, with experience in  human resources , mainly in the compensation and benefits  department, recruitment, and onboarding processes. I am currently developing my culinary  skills in Vancouver, British Columbia. I define myself by always prioritizing customer service, prioritizing clarity and reliability in processes, thereby positively transforming the decisions that can be made to have a positive impact on the future of companies and their operations.\n\n\nView Resume View Projects Appendix"
   },
   {
     "objectID": "index.html#highlights",
     "href": "index.html#highlights",
     "title": "Home",
     "section": "Highlights",
-    "text": "Highlights\n\n3+ years in HR at a Shell licensee (Dominican Republic) with focus on employee support and documentation.\nHands-on experience in fast-paced culinary environments—organization, teamwork, and quality execution.\nBilingual: Spanish & English."
+    "text": "Highlights\n\nMore than 3 years of experience in Human Resources at Shell Dominican Republic, serving employees, internal and external clients, managing internal documentation, and creating monthly metrics.\nPractices in the culinary field that require high speed, focused on organization, teamwork, and the preparation of food dishes with high quality standards."
+  },
+  {
+    "objectID": "index.html#bilingual",
+    "href": "index.html#bilingual",
+    "title": "Home",
+    "section": "Bilingual",
+    "text": "Bilingual\n\nSpanish (Native)\nEnglish (Second Language)"
   },
   {
     "objectID": "index.html#recent-focus",
     "href": "index.html#recent-focus",
     "title": "Home",
     "section": "Recent Focus",
-    "text": "Recent Focus\n\nLeadership and people operations in multicultural contexts.\nBuilding clear documentation and dashboards to inform decisions.\nIterating a professional brand and portfolio using Quarto and Markdown."
+    "text": "Recent Focus\n\nPersonnel leadership in a multicultural approach.\nCreation of clear documentation and quality control dashboards for decision-making.\nPreparation and continuous development for my personal brand and professional career using the Quarto tool."
   },
   {
     "objectID": "appendix.html",
@@ -81,14 +88,14 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "📍 Vancouver, BC, Canada\n\n✉️ itsmichricartn@gmail.com\n\n🔗 LinkedIn (add URL)\n\n📄 Download Resume (PDF)\n\n\nStatic sites cannot process forms by themselves; use a mailto link (as above) or connect a form service if needed."
+    "text": "📍 Vancouver, BC, Canada\n\n✉️ itsmichricartn@gmail.com\n\n🔗 LinkedIn (add URL)\n\n📄 Download Resume (PDF)"
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects / Case Studies",
     "section": "",
-    "text": "Below are selected projects. Each includes a short overview, my role, and outcomes.\n\n\n\nTriMetrix → Career Pathways\n\n\nOverview: Used DISC, Driving Forces, and Competencies to align roles and development paths.\n\n\nRole: Analyst and presenter.\n\n\nOutcome: Clear role-fit insights and a learning plan mapped to goals.\n\n\nView PDF (add link)\n\n\n\n\nOdyssey Life Design (ILDP)\n\n\nOverview: Multi-year plan with SMART metrics and 70-20-10 activities.\n\n\nRole: Author — designed alternatives, risks, and milestones.\n\n\nOutcome: Actionable roadmap and reflection framework.\n\n\nView PDF (add link)\n\n\n\n\nMarketing & Analytics Coursework\n\n\nOverview: Quarto reports, strategy memos, and simple dashboards for class cases.\n\n\nRole: Analyst and writer.\n\n\nOutcome: Clear communication of findings; reproducible reports in Markdown.\n\n\nView PDF/Repo (add link)\n\n\n\n\nTip: Replace the “View PDF/Repo” links with real files (PDFs) or GitHub repos."
+    "text": "Below are selected projects. Each includes a short overview, my role, and outcomes.\n\n\n\nTriMetrix → Career Pathways\n\n\nOverview: Used DISC, Driving Forces, and Competencies to align roles and development paths.\n\n\nRole: Analyst and presenter.\n\n\nOutcome: Clear role-fit insights and a learning plan mapped to goals.\n\n\n\n\nOdyssey Life Design (ILDP)\n\n\nOverview: Multi-year plan with SMART metrics and 70-20-10 activities.\n\n\nRole: Author — designed alternatives, risks, and milestones.\n\n\nOutcome: Actionable roadmap and reflection framework.\n\n\n\n\nMarketing & Analytics Coursework\n\n\nOverview: Quarto reports, strategy memos, and simple dashboards for class cases.\n\n\nRole: Analyst and writer.\n\n\nOutcome: Clear communication of findings; reproducible reports in Markdown."
   },
   {
     "objectID": "resume.html",
@@ -123,6 +130,6 @@
     "href": "resume.html#download-resume",
     "title": "Resume",
     "section": "Download Resume",
-    "text": "Download Resume\nDownload PDF{.btn .btn-primary role=“button” target=“_blank” rel=“noopener” download}"
+    "text": "Download Resume\nDownload PDF"
   }
 ]

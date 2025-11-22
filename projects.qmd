@@ -11,7 +11,6 @@ Below are selected projects. Each includes a short overview, my role, and outcom
 <p><strong>Overview:</strong> Used DISC, Driving Forces, and Competencies to align roles and development paths.</p>
 <p><strong>Role:</strong> Analyst and presenter.</p>
 <p><strong>Outcome:</strong> Clear role-fit insights and a learning plan mapped to goals.</p>
-<p><a href="#" class="btn btn-sm btn-outline-primary" role="button">View PDF (add link)</a></p>
 </div>
 
 <div class="card">
@@ -19,7 +18,6 @@ Below are selected projects. Each includes a short overview, my role, and outcom
 <p><strong>Overview:</strong> Multi-year plan with SMART metrics and 70-20-10 activities.</p>
 <p><strong>Role:</strong> Author — designed alternatives, risks, and milestones.</p>
 <p><strong>Outcome:</strong> Actionable roadmap and reflection framework.</p>
-<p><a href="#" class="btn btn-sm btn-outline-primary" role="button">View PDF (add link)</a></p>
 </div>
 
 <div class="card">
@@ -27,9 +25,8 @@ Below are selected projects. Each includes a short overview, my role, and outcom
 <p><strong>Overview:</strong> Quarto reports, strategy memos, and simple dashboards for class cases.</p>
 <p><strong>Role:</strong> Analyst and writer.</p>
 <p><strong>Outcome:</strong> Clear communication of findings; reproducible reports in Markdown.</p>
-<p><a href="#" class="btn btn-sm btn-outline-primary" role="button">View PDF/Repo (add link)</a></p>
 </div>
 
 </div>
 
-> Tip: Replace the “View PDF/Repo” links with real files (PDFs) or GitHub repos.
+
