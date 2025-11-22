@@ -1,12 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const els = document.querySelectorAll('.reveal');
-
-  // Si el browser no soporta IntersectionObserver, muestra todo
   if (!('IntersectionObserver' in window)) {
     els.forEach(el => el.classList.add('visible'));
     return;
   }
-
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -15,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
-
   els.forEach(el => io.observe(el));
 });
+
 
