@@ -1,49 +1,62 @@
 ---
 title: "Home"
 body-classes: home
+pagetitle: "Michelle Marie Ricart — MBA Portfolio"
+image: headshot.jpg
 ---
 
----{=html}
-<section class="soft-hero lush">
+<div class="hero">
+<section class="soft-hero reveal reveal-up">
   <div style="display:flex; gap:1rem; align-items:center;">
-    <img src="headshot.jpg"
-         alt="Professional headshot of Michelle Marie Ricart"
-         class="headshot" width="148" height="148">
+    <img src="headshot.jpg" alt="Professional headshot of Michelle Marie Ricart" class="headshot" />
     <div>
-      <h1>Michelle Marie Ricart Naranjo</h1>
-      <p><em>MBA Candidate · University Canada West (UCW) · Vancouver, BC</em></p>
+      <h1 class="reveal reveal-up" style="--delay:120ms;">Michelle Marie Ricart Naranjo</h1>
+      <p class="reveal reveal-up" style="--delay:220ms;">
+        <em>MBA Candidate · University Canada West (UCW) · Vancouver, BC</em>
+      </p>
     </div>
   </div>
+
+  <p class="reveal reveal-up" style="--delay:320ms;">
+    I have a degree in people-oriented industrial psychology, with experience in
+    <strong>Human Resources</strong>, mainly in the <strong>Compensation and Benefits</strong>
+    department, recruitment, and onboarding processes. I am currently developing my
+    <strong>culinary skills</strong> in Vancouver, British Columbia. I always prioritize customer
+    service, clarity, and reliability in processes, helping transform decisions into
+    positive impact for companies and their operations.
+  </p>
+
+  <div class="footer-cta reveal reveal-up" style="--delay:420ms;">
+    <a class="btn btn-primary" href="resume.html" role="button">View Resume</a>
+    <a class="btn btn-outline-secondary" href="projects.html" role="button">View Projects</a>
+    <a class="btn btn-outline-secondary" href="appendix.html" role="button">Appendix</a>
+  </div>
 </section>
----
 
+<!-- Highlights -->
+<div class="reveal reveal-up" style="--delay:160ms; margin-top:1rem;">
+  <h3>Highlights</h3>
+  <ul>
+    <li>3+ years in HR at Shell Dominican Republic: employee service, internal/external client support, documentation, and monthly metrics.</li>
+    <li>Culinary practice in high-speed environments focused on organization, teamwork, and high-quality standards.</li>
+  </ul>
+</div>
 
-# Michelle Marie Ricart Naranjo
-*MBA Candidate · University Canada West (UCW) · Vancouver, BC*
+<!-- Bilingual -->
+<div class="reveal reveal-up" style="--delay:220ms; margin-top:.5rem;">
+  <h3>Bilingual</h3>
+  <ul>
+    <li>Spanish (Native)</li>
+    <li>English (Second Language)</li>
+  </ul>
+</div>
 
-I have a degree in people-oriented industrial psychology, with experience in **Human Resources**, mainly in the **Compensation and Benefits** department, recruitment, and onboarding processes. I am currently developing my **culinary skills** in Vancouver, British Columbia. I always prioritize customer service, clarity, and reliability in processes, helping transform decisions into positive impact for companies and their operations.
-
-::: {.footer-cta .reveal .reveal-up style="--delay:420ms"}
-[View Resume](resume.html){.btn .btn-primary role="button"}
-[View Projects](projects.html){.btn .btn-outline-secondary role="button"}
-[Appendix](appendix.html){.btn .btn-outline-secondary role="button"}
-:::
-
-::: {.reveal .reveal-up style="--delay:160ms; margin-top:1rem;"}
-### Highlights
-- 3+ years in HR at Shell Dominican Republic: employee service, internal/external client support, documentation, and monthly metrics.
-- Culinary practice in high-speed environments focused on organization, teamwork, and high-quality standards.
-:::
-
-::: {.reveal .reveal-up style="--delay:220ms; margin-top:.5rem;"}
-### Bilingual
-- Spanish (Native)  
-- English (Second Language)
-:::
-
-::: {.reveal .reveal-up style="--delay:280ms; margin-top:.5rem;"}
-### Recent Focus
-- People leadership in multicultural contexts.
-- Clear documentation and quality-control dashboards for decision-making.
-- Ongoing personal brand and career development using Quarto.
-:::
+<!-- Recent Focus -->
+<div class="reveal reveal-up" style="--delay:280ms; margin-top:.5rem;">
+  <h3>Recent Focus</h3>
+  <ul>
+    <li>People leadership in multicultural contexts.</li>
+    <li>Clear documentation and quality-control dashboards for decision-making.</li>
+    <li>Ongoing personal brand and career development using Quarto.</li>
+  </ul>
+</div>
