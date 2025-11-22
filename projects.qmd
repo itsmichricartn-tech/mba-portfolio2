@@ -3,47 +3,41 @@ title: "Projects / Case Studies"
 body-classes: projects
 ---
 
-<section class="soft-hero reveal reveal-up">
-  <h2>Selected Projects</h2>
-  <p>Below are selected projects. Each includes a short overview, my role, and outcomes.</p>
+## Selected Projects
 
-  <div class="reveal reveal-up" style="--delay:120ms; margin:.25rem 0 1rem 0;">
-    <span class="badge">HR Analytics</span>
-    <span class="badge">Career Design</span>
-    <span class="badge">Quarto Reports</span>
-  </div>
+Below are selected projects. Each includes a short overview, my role, and outcomes.
 
-  <div class="cards">
-    <div class="card lift reveal reveal-up" style="--delay:0ms;">
-      <h3>TriMetrix → Career Pathways</h3>
-      <p><strong>Overview:</strong> Used DISC, Driving Forces, and Competencies to align roles and development paths.</p>
-      <p><strong>Role:</strong> Analyst and presenter.</p>
-      <p><strong>Outcome:</strong> Clear role-fit insights and a learning plan mapped to goals.</p>
-      <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;">
-        <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank" rel="noopener">PDF (add link)</a>
-        <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank" rel="noopener">Slides (add link)</a>
-      </div>
-    </div>
+::: {.reveal .reveal-up style="--delay:120ms; margin:.25rem 0 1rem 0;"}
+<span class="badge">HR Analytics</span>
+<span class="badge">Career Design</span>
+<span class="badge">Quarto Reports</span>
+:::
 
-    <div class="card lift reveal reveal-up" style="--delay:140ms;">
-      <h3>Odyssey Life Design (ILDP)</h3>
-      <p><strong>Overview:</strong> Multi-year plan with SMART metrics and 70-20-10 activities.</p>
-      <p><strong>Role:</strong> Author — designed alternatives, risks, and milestones.</p>
-      <p><strong>Outcome:</strong> Actionable roadmap and reflection framework.</p>
-      <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;">
-        <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank" rel="noopener">PDF (add link)</a>
-      </div>
-    </div>
+::: {.cards}
 
-    <div class="card lift reveal reveal-up" style="--delay:280ms;">
-      <h3>Marketing & Analytics Coursework</h3>
-      <p><strong>Overview:</strong> Quarto reports, strategy memos, and simple dashboards for class cases.</p>
-      <p><strong>Role:</strong> Analyst and writer.</p>
-      <p><strong>Outcome:</strong> Clear communication of findings; reproducible reports in Markdown.</p>
-      <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;">
-        <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank" rel="noopener">Repo (add link)</a>
-        <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank" rel="noopener">Report (add link)</a>
-      </div>
-    </div>
-  </div>
-</section>
+::: {.card .lift .reveal .reveal-up}
+### TriMetrix → Career Pathways
+**Overview:** Used DISC, Driving Forces, and Competencies to align roles and development paths.  
+**Role:** Analyst and presenter.  
+**Outcome:** Clear role-fit insights and a learning plan mapped to goals.  
+[PDF (add link)](#){.btn .btn-sm .btn-outline-secondary target="_blank" rel="noopener"}
+:::
+
+::: {.card .lift .reveal .reveal-up style="--delay:140ms"}
+### Odyssey Life Design (ILDP)
+**Overview:** Multi-year plan with SMART metrics and 70-20-10 activities.  
+**Role:** Author — designed alternatives, risks, and milestones.  
+**Outcome:** Actionable roadmap and reflection framework.  
+[PDF (add link)](#){.btn .btn-sm .btn-outline-secondary target="_blank" rel="noopener"}
+:::
+
+::: {.card .lift .reveal .reveal-up style="--delay:280ms"}
+### Marketing & Analytics Coursework
+**Overview:** Quarto reports, strategy memos, and simple dashboards for class cases.  
+**Role:** Analyst and writer.  
+**Outcome:** Clear communication of findings; reproducible reports in Markdown.  
+[Repo (add link)](#){.btn .btn-sm .btn-outline-secondary target="_blank" rel="noopener"}
+:::
+
+:::
+
