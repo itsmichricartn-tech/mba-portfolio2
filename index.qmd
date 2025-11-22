@@ -16,10 +16,6 @@ body-classes: home
 </section>
 
 
-
-
-
-
 # Michelle Marie Ricart Naranjo
 *MBA Candidate · University Canada West (UCW) · Vancouver, BC*
 

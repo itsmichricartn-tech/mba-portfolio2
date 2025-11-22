@@ -194,3 +194,34 @@ body.reflection.headshot{ box-shadow:0 0 0 6px #fff,0 0 0 12px rgba(255,231,161,
 
 /* Headings con subrayado más ancho */
 h2::after{ width:120px; height:7px; }
+/* Fondo pastel global */
+body {
+  background:
+    radial-gradient(1200px 600px at -10% -10%, #f7f0ff 0%, transparent 60%),
+    radial-gradient(1200px 600px at 110% -10%, #e6f2ff 0%, transparent 60%),
+    radial-gradient(1200px 600px at 50% 120%, #fff6e9 0%, transparent 60%),
+    #f9fbff;
+  background-attachment: fixed;
+}
+
+/* Tarjeta hero con halo y sombra suave */
+.soft-hero {
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 18px;
+  background:
+    radial-gradient(220px 120px at 10% 10%, rgba(166, 180, 255, .20) 0%, transparent 65%),
+    radial-gradient(220px 120px at 90% 20%, rgba(255, 173, 214, .15) 0%, transparent 65%),
+    rgba(255,255,255,.85);
+  box-shadow:
+    0 12px 30px rgba(16, 24, 40, .06),
+    0 4px 12px rgba(16, 24, 40, .04);
+  backdrop-filter: blur(6px);
+}
+
+.soft-hero .headshot {
+  width: 148px; height: 148px; object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 6px 14px rgba(16,24,40,.12);
+}
