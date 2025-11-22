@@ -1,0 +1,46 @@
+---
+title: "Appendix — LLM Site Map & Drafts"
+---
+
+> This appendix stores the LLM prompts, site map, and section drafts used for Assignment 3. I edited the website content for accuracy and my own voice.
+
+## A. Prompts used (verbatim)
+(Date: 2025-10-22, Model: ChatGPT)
+
+## B. LLM-generated site map (verbatim)
+Home/About | Resume | Projects/Case Studies | Skills & Certifications | Contact | (Optional) Leadership/Community | (Optional) Publications
+
+## C. LLM-generated section drafts (verbatim)
+### Home/About (draft)
+- One-paragraph intro that frames strengths in HR and service-oriented teamwork; mention bilingual ability.  
+- 3 bullets of highlights: HR experience in Shell licensee; high-paced culinary teamwork; bilingual.  
+- CTA buttons to Resume, Projects, Appendix.
+
+### Resume (draft)
+- Education list (MBA UCW in progress; ILAC; UNPHU).  
+- Experience with concise bullets for HR roles and recent culinary experience.  
+- Skills grouped by People & Culture, Tools, Professional.  
+- Resume PDF download button.
+
+### Projects/Case Studies (draft)
+- 3 tiles/cards: TriMetrix Career Pathways; ILDP Odyssey; Marketing & Analytics coursework.  
+- Each: Overview, Role, Outcome; link to PDF/repo.
+
+### Skills & Certifications (draft)
+- Badges for core skills (Comp & Benefits, Employee Services, Excel, Time Management, etc.).  
+- Certifications placeholder (FoodSafe, HR coursework).  
+- Tools & Methods (Excel, Word, Outlook, Quarto/Markdown).
+
+### Contact (draft)
+- Location, mailto email, LinkedIn link, resume download.  
+- Note on static-site forms.
+
+## D. What I kept vs. changed
+- **Kept:** Page structure, concise bullet style, CTA buttons.  
+- **Modified:** Replaced generic wording with my real timeline, roles, and tools; polished tone.  
+- **Removed:** Unverified claims and filler text.  
+- **Added:** Links to resume PDF and project artifacts; accessibility tweaks.
+
+## E. Attribution
+- LLM: ChatGPT (OpenAI). Date: 2025-10-22.  
+- Use: brainstorming + first drafts; I reviewed and edited all content for accuracy and authenticity.

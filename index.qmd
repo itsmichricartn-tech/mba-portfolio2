@@ -1,0 +1,27 @@
+---
+title: "Home"
+pagetitle: "Michelle Marie Ricart — MBA Portfolio"
+image: headshot.jpg
+---
+
+<div class="hero">
+<img src="headshot.jpg" alt="Professional headshot of Michelle Marie Ricart" class="headshot" />
+<h1>Michelle Marie Ricart</h1>
+<p><em>MBA Candidate · University Canada West (UCW) · Vancouver, BC</em></p>
+<p>People-centric professional with experience in <strong>Human Resources</strong> (Compensation & Benefits, employee services, onboarding) and recent roles in <strong>culinary operations</strong> in Vancouver. I value clarity, service, and reliable processes—turning information into simple, actionable decisions.</p>
+<div class="footer-cta">
+<a class="btn btn-primary" href="resume.html" role="button">View Resume</a>
+<a class="btn btn-outline-secondary" href="projects.html" role="button">View Projects</a>
+<a class="btn btn-outline-secondary" href="appendix.html" role="button">Appendix</a>
+</div>
+</div>
+
+## Highlights
+- 3+ years in HR at a Shell licensee (Dominican Republic) with focus on employee support and documentation.
+- Hands-on experience in fast-paced culinary environments—organization, teamwork, and quality execution.
+- Bilingual: Spanish & English.
+
+## Recent Focus
+- Leadership and people operations in multicultural contexts.
+- Building clear documentation and dashboards to inform decisions.
+- Iterating a professional brand and portfolio using Quarto and Markdown.

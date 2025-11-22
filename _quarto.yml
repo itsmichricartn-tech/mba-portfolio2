@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: .
+
+website:
+  title: "Michelle Marie Ricart — MBA Portfolio"
+  navbar:
+    logo: headshot.jpg
+    left:
+      - href: index.qmd
+        text: Home
+      - href: resume.qmd
+        text: Resume
+      - href: projects.qmd
+        text: Projects
+      - href: skills.qmd
+        text: Skills & Certifications
+      - href: contact.qmd
+        text: Contact
+    right:
+      - text: Reflection
+        href: reflection.qmd
+      - text: Appendix
+        href: appendix.qmd
+  page-footer:
+    left: "© 2025 Michelle Marie Ricart"
+    right: "Built with Quarto"
+  reader-mode: true
+
+format:
+  html:
+    theme: litera
+    css: styles.scss
+    toc: true
+    smooth-scroll: true
+    anchor-sections: true
+    embed-resources: true     # HTML autocontenido (sin site_libs)

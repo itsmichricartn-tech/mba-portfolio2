@@ -1,0 +1,24 @@
+---
+title: "Skills & Certifications"
+---
+
+### Core Skills
+<span class="badge">Compensation & Benefits</span>
+<span class="badge">Employee Services</span>
+<span class="badge">Onboarding</span>
+<span class="badge">Internal Communications</span>
+<span class="badge">Excel (dashboards)</span>
+<span class="badge">Time Management</span>
+<span class="badge">Problem-Solving</span>
+<span class="badge">Teamwork</span>
+<span class="badge">Customer Service</span>
+<span class="badge">Spanish & English</span>
+
+### Certifications (add details/dates)
+- FoodSafe Level 1 — *Add date if completed*
+- Other HR/People Ops coursework — *Add provider and date*
+
+### Tools & Methods
+- Microsoft Excel, Word, Outlook  
+- Quarto/Markdown for documentation and reporting  
+- Basic data visualization (charts, dashboards)

@@ -1,0 +1,134 @@
+/* ============================
+   MBA Pastel Pro — Aesthetic
+   ============================ */
+
+/* Paleta pastel profesional */
+:root{
+  --surface:      #F7F9FD;
+  --surface-2:    #FFFFFF;
+  --muted:        #E8EDFA;
+  --text:         #1D2433;
+
+  --brand:        #4F6FC8; /* periwinkle */
+  --brand-2:      #89A8D8; /* light sky */
+  --accent:       #E8A2B0; /* blush */
+  --success:      #A8E6CF; /* mint */
+  --info:         #BDE0FE; /* baby blue */
+  --warning:      #FFE8A1; /* butter */
+  --danger:       #FFADAD; /* soft red */
+
+  /* Mapea a Bootstrap */
+  --bs-body-bg:           var(--surface);
+  --bs-body-color:        var(--text);
+  --bs-border-color:      #E5EAF5;
+
+  --bs-primary:           var(--brand);
+  --bs-secondary:         var(--brand-2);
+  --bs-success:           var(--success);
+  --bs-info:              var(--info);
+  --bs-warning:           var(--warning);
+  --bs-danger:            var(--danger);
+  --bs-link-color:        var(--brand);
+  --bs-link-hover-color:  #3E5DB6;
+
+  --radius-xl: 1rem;
+  --shadow-card: 0 8px 24px rgba(0,0,0,.06);
+  --shadow-soft: 0 6px 18px rgba(0,0,0,.04);
+}
+
+/* Tipografía sistema (sobria y clara) */
+body{
+  font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar{
+  background: var(--surface-2) !important;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+.navbar-brand img{
+  width: 28px; height: 28px; object-fit: cover; border-radius: 9999px;
+}
+
+/* HERO */
+.hero{
+  padding: 3rem 1.25rem;
+  background: linear-gradient(180deg, var(--surface) 0%, #FFFFFF 100%);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.headshot{
+  width: 140px; height: 140px; object-fit: cover;
+  border-radius: 9999px;
+  border: 3px solid var(--bs-border-color);
+  box-shadow: var(--shadow-card);
+}
+
+/* TARJETAS */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.card{
+  background: var(--surface-2);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--radius-xl);
+  padding: 1rem;
+  box-shadow: var(--shadow-card);
+}
+.card h3{ margin-top: .25rem; }
+
+/* BADGES */
+.badge{
+  display: inline-block;
+  padding: .35rem .7rem;
+  border-radius: 9999px;
+  border: 1px solid var(--bs-border-color);
+  background: #F4F7FF;
+  color: var(--text);
+  margin: .15rem;
+  font-size: .9rem;
+}
+
+/* BOTONES */
+.btn-primary{
+  background: var(--brand) !important;
+  border-color: var(--brand) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 12px rgba(79,111,200,.25);
+}
+.btn-primary:hover{
+  background: #3E5DB6 !important;
+  border-color: #3E5DB6 !important;
+}
+.btn-outline-secondary{
+  border-color: var(--brand-2);
+  color: var(--brand);
+}
+.btn-outline-secondary:hover{
+  background: var(--brand-2);
+  color: #fff;
+  border-color: var(--brand-2);
+}
+
+/* LINKS */
+a{ text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+/* TABLAS */
+.table, .quarto-table table{ border-color: var(--bs-border-color); }
+.table thead th{ border-bottom: 2px solid var(--bs-border-color); }
+
+/* ACCESIBILIDAD */
+:focus-visible{
+  outline: 3px solid #99C1FF;
+  outline-offset: 2px;
+}
+
+/* Appendix: envolver verbatim (sin scroll horizontal) */
+pre, pre code{ white-space: pre-wrap; word-break: break-word; }

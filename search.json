@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "skills.html",
+    "href": "skills.html",
+    "title": "Skills & Certifications",
+    "section": "",
+    "text": "Core Skills\nCompensation & Benefits Employee Services Onboarding Internal Communications Excel (dashboards) Time Management Problem-Solving Teamwork Customer Service Spanish & English\n\n\nCertifications (add details/dates)\n\nFoodSafe Level 1 — Add date if completed\nOther HR/People Ops coursework — Add provider and date\n\n\n\nTools & Methods\n\nMicrosoft Excel, Word, Outlook\n\nQuarto/Markdown for documentation and reporting\n\nBasic data visualization (charts, dashboards)"
+  },
+  {
+    "objectID": "reflection.html",
+    "href": "reflection.html",
+    "title": "Reflection — LLM Use (300–500 words)",
+    "section": "",
+    "text": "Date: 2025-10-22\nModel(s): ChatGPT (LLM)\nWhat worked better as I added pages.\nExpanding to a multi-page structure clarified what belongs on each page and reduced cognitive load on the reader. The navbar gave me a stable mental model—Home for quick context, Resume for depth, Projects for evidence, Skills/Certs for proof, and Contact for calls-to-action. Using an LLM helped me brainstorm section labels, write first drafts fast, and surface alternative phrasings. The biggest win was idea-generation and rewording; it saved time and helped me keep a consistent tone across pages.\nEnsuring authenticity and accuracy.\nI treated the LLM’s output as a starting point, never as the source of truth. I replaced general phrasing with my real data: titles, dates, responsibilities, and the exact tools I used. I verified every claim against my resume and coursework, removed anything that sounded generic or unearned, and added context from my own experience—especially metrics and outcomes where I had them. I also included an Appendix that stores the prompts and the unedited LLM drafts to make the AI contribution transparent.\nWhat I’d improve next.\nI will add richer evidence (links to PDFs, brief case write-ups), collect concrete metrics for my highlights, and refine accessibility (alt text, heading order, contrast). I also plan to experiment with another theme and add a simple site search. Overall, the multi-page site feels more professional and scannable; the LLM is most helpful for brainstorming and polishing, while accuracy and voice are my responsibility."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "MBA Candidate · University Canada West (UCW) · Vancouver, BC\n\n\nPeople-centric professional with experience in Human Resources (Compensation & Benefits, employee services, onboarding) and recent roles in culinary operations in Vancouver. I value clarity, service, and reliable processes—turning information into simple, actionable decisions.\n\n\nView Resume View Projects Appendix"
+  },
+  {
+    "objectID": "index.html#highlights",
+    "href": "index.html#highlights",
+    "title": "Home",
+    "section": "Highlights",
+    "text": "Highlights\n\n3+ years in HR at a Shell licensee (Dominican Republic) with focus on employee support and documentation.\nHands-on experience in fast-paced culinary environments—organization, teamwork, and quality execution.\nBilingual: Spanish & English."
+  },
+  {
+    "objectID": "index.html#recent-focus",
+    "href": "index.html#recent-focus",
+    "title": "Home",
+    "section": "Recent Focus",
+    "text": "Recent Focus\n\nLeadership and people operations in multicultural contexts.\nBuilding clear documentation and dashboards to inform decisions.\nIterating a professional brand and portfolio using Quarto and Markdown."
+  },
+  {
+    "objectID": "appendix.html",
+    "href": "appendix.html",
+    "title": "Appendix — LLM Site Map & Drafts",
+    "section": "",
+    "text": "This appendix stores the LLM prompts, site map, and section drafts used for Assignment 3. I edited the website content for accuracy and my own voice."
+  },
+  {
+    "objectID": "appendix.html#a.-prompts-used-verbatim",
+    "href": "appendix.html#a.-prompts-used-verbatim",
+    "title": "Appendix — LLM Site Map & Drafts",
+    "section": "A. Prompts used (verbatim)",
+    "text": "A. Prompts used (verbatim)\n(Date: 2025-10-22, Model: ChatGPT)"
+  },
+  {
+    "objectID": "appendix.html#b.-llm-generated-site-map-verbatim",
+    "href": "appendix.html#b.-llm-generated-site-map-verbatim",
+    "title": "Appendix — LLM Site Map & Drafts",
+    "section": "B. LLM-generated site map (verbatim)",
+    "text": "B. LLM-generated site map (verbatim)\nHome/About | Resume | Projects/Case Studies | Skills & Certifications | Contact | (Optional) Leadership/Community | (Optional) Publications"
+  },
+  {
+    "objectID": "appendix.html#c.-llm-generated-section-drafts-verbatim",
+    "href": "appendix.html#c.-llm-generated-section-drafts-verbatim",
+    "title": "Appendix — LLM Site Map & Drafts",
+    "section": "C. LLM-generated section drafts (verbatim)",
+    "text": "C. LLM-generated section drafts (verbatim)\n\nHome/About (draft)\n\nOne-paragraph intro that frames strengths in HR and service-oriented teamwork; mention bilingual ability.\n\n3 bullets of highlights: HR experience in Shell licensee; high-paced culinary teamwork; bilingual.\n\nCTA buttons to Resume, Projects, Appendix.\n\n\n\nResume (draft)\n\nEducation list (MBA UCW in progress; ILAC; UNPHU).\n\nExperience with concise bullets for HR roles and recent culinary experience.\n\nSkills grouped by People & Culture, Tools, Professional.\n\nResume PDF download button.\n\n\n\nProjects/Case Studies (draft)\n\n3 tiles/cards: TriMetrix Career Pathways; ILDP Odyssey; Marketing & Analytics coursework.\n\nEach: Overview, Role, Outcome; link to PDF/repo.\n\n\n\nSkills & Certifications (draft)\n\nBadges for core skills (Comp & Benefits, Employee Services, Excel, Time Management, etc.).\n\nCertifications placeholder (FoodSafe, HR coursework).\n\nTools & Methods (Excel, Word, Outlook, Quarto/Markdown).\n\n\n\nContact (draft)\n\nLocation, mailto email, LinkedIn link, resume download.\n\nNote on static-site forms."
+  },
+  {
+    "objectID": "appendix.html#d.-what-i-kept-vs.-changed",
+    "href": "appendix.html#d.-what-i-kept-vs.-changed",
+    "title": "Appendix — LLM Site Map & Drafts",
+    "section": "D. What I kept vs. changed",
+    "text": "D. What I kept vs. changed\n\nKept: Page structure, concise bullet style, CTA buttons.\n\nModified: Replaced generic wording with my real timeline, roles, and tools; polished tone.\n\nRemoved: Unverified claims and filler text.\n\nAdded: Links to resume PDF and project artifacts; accessibility tweaks."
+  },
+  {
+    "objectID": "appendix.html#e.-attribution",
+    "href": "appendix.html#e.-attribution",
+    "title": "Appendix — LLM Site Map & Drafts",
+    "section": "E. Attribution",
+    "text": "E. Attribution\n\nLLM: ChatGPT (OpenAI). Date: 2025-10-22.\n\nUse: brainstorming + first drafts; I reviewed and edited all content for accuracy and authenticity."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "📍 Vancouver, BC, Canada\n\n✉️ itsmichricartn@gmail.com\n\n🔗 LinkedIn (add URL)\n\n📄 Download Resume (PDF)\n\n\nStatic sites cannot process forms by themselves; use a mailto link (as above) or connect a form service if needed."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects / Case Studies",
+    "section": "",
+    "text": "Below are selected projects. Each includes a short overview, my role, and outcomes.\n\n\n\nTriMetrix → Career Pathways\n\n\nOverview: Used DISC, Driving Forces, and Competencies to align roles and development paths.\n\n\nRole: Analyst and presenter.\n\n\nOutcome: Clear role-fit insights and a learning plan mapped to goals.\n\n\nView PDF (add link)\n\n\n\n\nOdyssey Life Design (ILDP)\n\n\nOverview: Multi-year plan with SMART metrics and 70-20-10 activities.\n\n\nRole: Author — designed alternatives, risks, and milestones.\n\n\nOutcome: Actionable roadmap and reflection framework.\n\n\nView PDF (add link)\n\n\n\n\nMarketing & Analytics Coursework\n\n\nOverview: Quarto reports, strategy memos, and simple dashboards for class cases.\n\n\nRole: Analyst and writer.\n\n\nOutcome: Clear communication of findings; reproducible reports in Markdown.\n\n\nView PDF/Repo (add link)\n\n\n\n\nTip: Replace the “View PDF/Repo” links with real files (PDFs) or GitHub repos."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "MBA (in progress) — University Canada West (UCW), Vancouver, BC\n\nPathway III (Proficiency) — International Language Academy of Canada (ILAC), Jul 2024\n\nB.Sc. in Industrial Psychology — Universidad Pedro Henríquez Ureña (UNPHU), Apr 2023"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "",
+    "text": "MBA (in progress) — University Canada West (UCW), Vancouver, BC\n\nPathway III (Proficiency) — International Language Academy of Canada (ILAC), Jul 2024\n\nB.Sc. in Industrial Psychology — Universidad Pedro Henríquez Ureña (UNPHU), Apr 2023"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Resume",
+    "section": "Experience",
+    "text": "Experience\n\nHuman Resources — Shell Licensee (Santo Domingo, DR)\nCompensation & Benefits Analyst (Dec 2021 – Sep 2024)\n- Responded to employee inquiries on benefits, payroll, and policies, improving service satisfaction.\n- Coordinated documentation with the Ministry of Labour; improved timeliness of certifications.\n- Prepared letters, contracts, and official communications with accuracy and standards.\nGeneral Analyst (Dec 2021 – Aug 2024)\n- Supported recruitment, onboarding, and training logistics for positive new-hire experiences.\n- Delivered front-line support to employees and external partners.\n- Standardized communications and document control to ensure consistency.\n\n\nCulinary & Hospitality — Vancouver, Canada\nCook, Guilt and Co (Oct 2025 – Present)\n- Ensure ingredient quality; organize station; execute menu items and prep to standard.\nLine Cook, Six Acres (Mar 2025 – May 2025)\n- Maintain quality control and cleanliness; complete assigned dishes and prep.\nPlater, Fed (Mar 2025 – Sep 2025)\n- Accurate plating, portions, and presentation in a high-volume environment.\nStock Service, ZARA — Santo Domingo (Nov 2019 – Nov 2021)\n- Inventory, order prep, and ERP updates to maintain availability."
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Resume",
+    "section": "Skills",
+    "text": "Skills\n\nPeople & Culture: Compensation & Benefits, Employee Services, Onboarding, Internal Comms\n\nTools: Excel (dashboards), Word (official documents), Outlook (coordination)\n\nProfessional: Teamwork, Problem-Solving, Time Management, Attention to Detail\n\nLanguages: Spanish (native), English (professional)"
+  },
+  {
+    "objectID": "resume.html#download-resume",
+    "href": "resume.html#download-resume",
+    "title": "Resume",
+    "section": "Download Resume",
+    "text": "Download Resume\nDownload PDF{.btn .btn-primary role=“button” target=“_blank” rel=“noopener” download}"
+  }
+]
