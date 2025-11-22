@@ -4,7 +4,7 @@
     "href": "skills.html",
     "title": "Skills & Certifications",
     "section": "",
-    "text": "Core Skills\n\n\nCompensation & Benefits Employee Services Onboarding Internal Communications Excel (dashboards) Time Management Problem-Solving Teamwork Customer Service Spanish & English\n\n\n\n\nCertifications\n\n\n\nFoodSafe Level 1 — June 2025\n\n\nHR/People Ops coursework — January 2023\n\n\n\n \n\n\n\n\nTools & Methods\n\n\n\nMicrosoft Excel, Word, Outlook\n\n\nQuarto/Markdown for documentation and reporting\n\n\nBasic data visualization (charts, dashboards)"
+    "text": "Core Skills\n\n\nCompensation & Benefits Employee Services Onboarding Internal Communications Excel (dashboards) Time Management Problem-Solving Teamwork Customer Service Spanish & English\n\n\n\n\nCertifications\n\n\n\nFoodSafe Level 1 — June 2025\n\n\nHR/People Ops coursework — January 2023\n\n\n\n\n\n\n\nTools & Methods\n\n\n\nMicrosoft Excel, Word, Outlook\n\n\nQuarto/Markdown for documentation and reporting\n\n\nBasic data visualization (charts, dashboards)"
   },
   {
     "objectID": "reflection.html",
@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Michelle Marie Ricart Naranjo",
     "section": "",
-    "text": "Professional headshot of Michelle Marie Ricart\n\n\n\nMichelle Marie Ricart Naranjo\nMBA Candidate · University Canada West (UCW) · Vancouver, BC\nI have a degree in people-oriented industrial psychology, with experience in Human Resources, mainly in the Compensation and Benefits department, recruitment, and onboarding processes. I am currently developing my culinary skills in Vancouver, British Columbia. I always prioritize customer service, clarity, and reliability in processes, helping transform decisions into positive impact for companies and their operations.\n\nView Resume View Projects Appendix\n\n\n\n\nHighlights\n\n3+ years in HR at Shell Dominican Republic: employee service, internal/external client support, documentation, and monthly metrics.\nCulinary practice in high-speed environments focused on organization, teamwork, and high-quality standards.\n\n\n\nBilingual\n\nSpanish (Native)\n\nEnglish (Second Language)\n\n\n\nRecent Focus\n\nPeople leadership in multicultural contexts.\nClear documentation and quality-control dashboards for decision-making.\nOngoing personal brand and career development using Quarto."
+    "text": "(headshot.jpg){.headshot}\n\nMichelle Marie Ricart Naranjo\nMBA Candidate · University Canada West (UCW) · Vancouver, BC\nI have a degree in people-oriented industrial psychology, with experience in Human Resources, mainly in the Compensation and Benefits department, recruitment, and onboarding processes. I am currently developing my culinary skills in Vancouver, British Columbia. I always prioritize customer service, clarity, and reliability in processes, helping transform decisions into positive impact for companies and their operations.\n\nView Resume View Projects Appendix\n\n\n\n\nHighlights\n\n3+ years in HR at Shell Dominican Republic: employee service, internal/external client support, documentation, and monthly metrics.\nCulinary practice in high-speed environments focused on organization, teamwork, and high-quality standards.\n\n\n\nBilingual\n\nSpanish (Native)\n\nEnglish (Second Language)\n\n\n\nRecent Focus\n\nPeople leadership in multicultural contexts.\nClear documentation and quality-control dashboards for decision-making.\nOngoing personal brand and career development using Quarto."
   },
   {
     "objectID": "appendix.html",
@@ -81,14 +81,14 @@
     "href": "projects.html",
     "title": "Projects / Case Studies",
     "section": "",
-    "text": "Below are selected projects. Each includes a short overview, my role, and outcomes.\n\nHR Analytics Career Design Quarto Reports\n\n\n\n\nOverview: Used DISC, Driving Forces, and Competencies to align roles and development paths.\nRole: Analyst and presenter.\nOutcome: Clear role-fit insights and a learning plan mapped to goals.\nPDF (add link)\n\n\n\nOverview: Multi-year plan with SMART metrics and 70-20-10 activities.\nRole: Author — designed alternatives, risks, and milestones.\nOutcome: Actionable roadmap and reflection framework.\nPDF (add link)\n\n\n\nOverview: Quarto reports, strategy memos, and simple dashboards for class cases.\nRole: Analyst and writer.\nOutcome: Clear communication of findings; reproducible reports in Markdown.\nRepo (add link)"
+    "text": "Below are selected projects. Each includes a short overview, my role, and outcomes.\n\nHR Analytics Career Design Quarto Reports\n\n\n\n\nOverview: Used DISC, Driving Forces, and Competencies to align roles and development paths.\nRole: Analyst and presenter.\nOutcome: Clear role-fit insights and a learning plan mapped to goals.\n\n\n\nOverview: Multi-year plan with SMART metrics and 70-20-10 activities.\nRole: Author — designed alternatives, risks, and milestones.\nOutcome: Actionable roadmap and reflection framework.\n\n\n\nOverview: Quarto reports, strategy memos, and simple dashboards for class cases.\nRole: Analyst and writer.\nOutcome: Clear communication of findings; reproducible reports in Markdown."
   },
   {
     "objectID": "projects.html#selected-projects",
     "href": "projects.html#selected-projects",
     "title": "Projects / Case Studies",
     "section": "",
-    "text": "Below are selected projects. Each includes a short overview, my role, and outcomes.\n\nHR Analytics Career Design Quarto Reports\n\n\n\n\nOverview: Used DISC, Driving Forces, and Competencies to align roles and development paths.\nRole: Analyst and presenter.\nOutcome: Clear role-fit insights and a learning plan mapped to goals.\nPDF (add link)\n\n\n\nOverview: Multi-year plan with SMART metrics and 70-20-10 activities.\nRole: Author — designed alternatives, risks, and milestones.\nOutcome: Actionable roadmap and reflection framework.\nPDF (add link)\n\n\n\nOverview: Quarto reports, strategy memos, and simple dashboards for class cases.\nRole: Analyst and writer.\nOutcome: Clear communication of findings; reproducible reports in Markdown.\nRepo (add link)"
+    "text": "Below are selected projects. Each includes a short overview, my role, and outcomes.\n\nHR Analytics Career Design Quarto Reports\n\n\n\n\nOverview: Used DISC, Driving Forces, and Competencies to align roles and development paths.\nRole: Analyst and presenter.\nOutcome: Clear role-fit insights and a learning plan mapped to goals.\n\n\n\nOverview: Multi-year plan with SMART metrics and 70-20-10 activities.\nRole: Author — designed alternatives, risks, and milestones.\nOutcome: Actionable roadmap and reflection framework.\n\n\n\nOverview: Quarto reports, strategy memos, and simple dashboards for class cases.\nRole: Analyst and writer.\nOutcome: Clear communication of findings; reproducible reports in Markdown."
   },
   {
     "objectID": "resume.html",

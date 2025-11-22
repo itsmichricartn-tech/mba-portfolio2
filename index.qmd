@@ -1,5 +1,5 @@
 ::: {.soft-hero .reveal .reveal-up}
-![Professional headshot of Michelle Marie Ricart](headshot.jpg){.headshot}
+(headshot.jpg){.headshot}
 
 # Michelle Marie Ricart Naranjo
 *MBA Candidate · University Canada West (UCW) · Vancouver, BC*
