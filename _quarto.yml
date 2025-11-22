@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: .
+  resources:
+    - scripts.js
 
 website:
   title: "Michelle Marie Ricart — MBA Portfolio"
@@ -34,4 +36,5 @@ format:
     toc: true
     smooth-scroll: true
     anchor-sections: true
-    embed-resources: true     # HTML autocontenido (sin site_libs)
+    embed-resources: true
+    include-after-body: scripts.js   

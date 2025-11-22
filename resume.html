@@ -3963,10 +3963,112 @@ a:hover{ text-decoration: underline; }
 
 /* Appendix: envolver verbatim (sin scroll horizontal) */
 pre, pre code{ white-space: pre-wrap; word-break: break-word; }
+/* ===== Animaciones base y accesibilidad ===== */
+.reveal{
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+  transition-delay: var(--delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal.is-visible{
+  opacity: 1;
+  transform: none;
+}
+.reveal-up{ transform: translateY(16px); }
+.reveal-right{ transform: translateX(18px); }
+.reveal-zoom{ transform: scale(.98); }
+
+@media (prefers-reduced-motion: reduce){
+  .reveal, .reveal.is-visible{
+    opacity: 1 !important; transform: none !important; transition: none !important;
+  }
+}
+
+/* ===== Hero suave con gradiente/luces pastel (muy profesional) ===== */
+.soft-hero{
+  position: relative;
+  padding: 2.5rem 1.25rem;
+  background: linear-gradient(180deg, var(--surface) 0%, #fff 100%);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+.soft-hero::before{
+  content:"";
+  position:absolute; inset:-60px -20px -40px -20px;
+  background:
+    radial-gradient(120px 120px at 15% 20%, rgba(189,224,254,.55), transparent 60%),
+    radial-gradient(160px 160px at 85% 30%, rgba(232,162,176,.35), transparent 60%),
+    radial-gradient(160px 160px at 40% 85%, rgba(137,168,216,.35), transparent 60%);
+  filter: blur(20px);
+  opacity:.6;
+  animation: floaty 28s ease-in-out infinite alternate;
+  pointer-events:none;
+}
+@keyframes floaty{
+  from{ transform: translate3d(-2%, -2%, 0) scale(1); }
+  to  { transform: translate3d( 2%,  2%, 0) scale(1.03); }
+}
+
+/* ===== Tarjetas pro con “lift” sutil ===== */
+.card.lift{
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card.lift:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.10);
+}
+
+/* ===== Chips ordenados (ya usas .badge) — micro hover ===== */
+.badge{ transition: transform .15s ease; }
+.badge:hover{ transform: translateY(-2px); }
+
+/* ===== Línea de tiempo para Resume ===== */
+.timeline{
+  position: relative; margin-left: .5rem; padding-left: 1.5rem;
+}
+.timeline::before{
+  content:""; position:absolute; left:.4rem; top:.2rem; bottom:.2rem;
+  width:3px; background: var(--bs-border-color);
+}
+.timeline-item{
+  position: relative; margin: 1.1rem 0;
+}
+.timeline-item::before{
+  content:""; position:absolute; left:-.2rem; top:.35rem;
+  width:12px; height:12px; border-radius:50%;
+  background: var(--bs-primary);
+  box-shadow: 0 0 0 3px var(--surface-2);
+}
+
+/* ===== Página por página: acentos de color ===== */
+body.home   .soft-hero::before{ opacity:.65; }
+body.resume .soft-hero::before{
+  background:
+    radial-gradient(140px 140px at 80% 25%, rgba(168,230,207,.45), transparent 60%),
+    radial-gradient(140px 140px at 20% 70%, rgba(137,168,216,.40), transparent 60%);
+}
+body.projects .soft-hero::before{
+  background:
+    radial-gradient(150px 150px at 25% 20%, rgba(189,224,254,.50), transparent 60%),
+    radial-gradient(150px 150px at 75% 80%, rgba(255,232,161,.45), transparent 60%);
+}
+body.skills .soft-hero::before{
+  background:
+    radial-gradient(160px 160px at 15% 80%, rgba(232,162,176,.35), transparent 60%),
+    radial-gradient(160px 160px at 85% 25%, rgba(189,224,254,.50), transparent 60%);
+}
+body.contact .soft-hero::before{
+  background:
+    radial-gradient(160px 160px at 20% 25%, rgba(137,168,216,.45), transparent 60%),
+    radial-gradient(160px 160px at 80% 75%, rgba(168,230,207,.45), transparent 60%);
+}
 </style>
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed resume quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -4033,21 +4135,8 @@ pre, pre code{ white-space: pre-wrap; word-break: break-word; }
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
-  <li><a href="#experience" id="toc-experience" class="nav-link" data-scroll-target="#experience">Experience</a>
-  <ul class="collapse">
-  <li><a href="#human-resources-shell-licensee-santo-domingo-dr" id="toc-human-resources-shell-licensee-santo-domingo-dr" class="nav-link" data-scroll-target="#human-resources-shell-licensee-santo-domingo-dr">Human Resources — Shell Licensee (Santo Domingo, DR)</a></li>
-  <li><a href="#culinary-hospitality-vancouver-canada" id="toc-culinary-hospitality-vancouver-canada" class="nav-link" data-scroll-target="#culinary-hospitality-vancouver-canada">Culinary &amp; Hospitality — Vancouver, Canada</a></li>
-  </ul></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
-  <li><a href="#download-resume" id="toc-download-resume" class="nav-link" data-scroll-target="#download-resume">Download Resume</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -4071,61 +4160,132 @@ pre, pre code{ white-space: pre-wrap; word-break: break-word; }
 </header>
 
 
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
+<!-- ===== Education (hero) ===== -->
+<section class="soft-hero reveal reveal-up">
+<h2 class="anchored">
+Education
+</h2>
 <ul>
-<li><strong>MBA (in progress)</strong> — University Canada West (UCW), Vancouver, BC<br>
+<li>
+<strong>MBA (in progress)</strong> — University Canada West (UCW), Vancouver, BC
 </li>
-<li><strong>Pathway III (Proficiency)</strong> — International Language Academy of Canada (ILAC), Jul 2024<br>
+<li>
+<strong>Pathway III (Proficiency)</strong> — International Language Academy of Canada (ILAC), Jul 2024
 </li>
-<li><strong>B.Sc. in Industrial Psychology</strong> — Universidad Pedro Henríquez Ureña (UNPHU), Apr 2023</li>
+<li>
+<strong>B.Sc. in Industrial Psychology</strong> — Universidad Pedro Henríquez Ureña (UNPHU), Apr 2023
+</li>
 </ul>
+<!-- Botón de descarga del CV -->
+<a class="btn btn-primary" href="MichelleRicart_Resume.pdf" target="_blank" rel="noopener" download> Download Resume (PDF) </a>
 </section>
-<section id="experience" class="level2">
-<h2 class="anchored" data-anchor-id="experience">Experience</h2>
-<section id="human-resources-shell-licensee-santo-domingo-dr" class="level3">
-<h3 class="anchored" data-anchor-id="human-resources-shell-licensee-santo-domingo-dr">Human Resources — Shell Licensee (Santo Domingo, DR)</h3>
-<p><strong>Compensation &amp; Benefits Analyst</strong> (Dec 2021 – Sep 2024)<br>
-- Responded to employee inquiries on benefits, payroll, and policies, improving service satisfaction.<br>
-- Coordinated documentation with the Ministry of Labour; improved timeliness of certifications.<br>
-- Prepared letters, contracts, and official communications with accuracy and standards.</p>
-<p><strong>General Analyst</strong> (Dec 2021 – Aug 2024)<br>
-- Supported recruitment, onboarding, and training logistics for positive new-hire experiences.<br>
-- Delivered front-line support to employees and external partners.<br>
-- Standardized communications and document control to ensure consistency.</p>
+<!-- ===== Experience (timeline) ===== -->
+<section class="soft-hero reveal reveal-up" style="margin-top:1rem;">
+<h2 class="anchored">
+Professional Experience
+</h2>
+<div class="timeline">
+<pre><code>&lt;!-- HR — Shell --&gt;
+&lt;div class=&quot;timeline-item reveal reveal-up&quot;&gt;
+  &lt;h4&gt;Compensation &amp; Benefits Analyst — Shell Licensee (Santo Domingo, DR)&lt;/h4&gt;
+  &lt;div&gt;&lt;em&gt;Dec 2021 – Sep 2024&lt;/em&gt;&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Responded to employee inquiries on benefits, payroll, and policies, improving service satisfaction.&lt;/li&gt;
+    &lt;li&gt;Coordinated documentation with the Ministry of Labour; improved timeliness of certifications.&lt;/li&gt;
+    &lt;li&gt;Prepared letters, contracts, and official communications with accuracy and standards.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;timeline-item reveal reveal-up&quot; style=&quot;--delay:120ms;&quot;&gt;
+  &lt;h4&gt;General Analyst — Shell Licensee (Santo Domingo, DR)&lt;/h4&gt;
+  &lt;div&gt;&lt;em&gt;Dec 2021 – Aug 2024&lt;/em&gt;&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Supported recruitment, onboarding, and training logistics for positive new-hire experiences.&lt;/li&gt;
+    &lt;li&gt;Delivered front-line support to employees and external partners.&lt;/li&gt;
+    &lt;li&gt;Standardized communications and document control to ensure consistency.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- Culinary &amp; Hospitality --&gt;
+&lt;div class=&quot;timeline-item reveal reveal-up&quot; style=&quot;--delay:240ms;&quot;&gt;
+  &lt;h4&gt;Culinary &amp; Hospitality — Vancouver, Canada&lt;/h4&gt;
+  &lt;div&gt;&lt;em&gt;2025&lt;/em&gt;&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Cook, Guilt and Co&lt;/strong&gt; (Oct 2025 – Present): ensure ingredient quality; organize station; execute menu items and prep to standard.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Line Cook, Six Acres&lt;/strong&gt; (Mar 2025 – May 2025): maintain quality control and cleanliness; complete assigned dishes and prep.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Plater, Fed&lt;/strong&gt; (Mar 2025 – Sep 2025): accurate plating, portions, and presentation in a high-volume environment.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- ZARA --&gt;
+&lt;div class=&quot;timeline-item reveal reveal-up&quot; style=&quot;--delay:360ms;&quot;&gt;
+  &lt;h4&gt;Stock Service — ZARA (Santo Domingo, DR)&lt;/h4&gt;
+  &lt;div&gt;&lt;em&gt;Nov 2019 – Nov 2021&lt;/em&gt;&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Inventory, order prep, and ERP updates to maintain availability.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+</div>
 </section>
-<section id="culinary-hospitality-vancouver-canada" class="level3">
-<h3 class="anchored" data-anchor-id="culinary-hospitality-vancouver-canada">Culinary &amp; Hospitality — Vancouver, Canada</h3>
-<p><strong>Cook, Guilt and Co</strong> (Oct 2025 – Present)<br>
-- Ensure ingredient quality; organize station; execute menu items and prep to standard.</p>
-<p><strong>Line Cook, Six Acres</strong> (Mar 2025 – May 2025)<br>
-- Maintain quality control and cleanliness; complete assigned dishes and prep.</p>
-<p><strong>Plater, Fed</strong> (Mar 2025 – Sep 2025)<br>
-- Accurate plating, portions, and presentation in a high-volume environment.</p>
-<p><strong>Stock Service, ZARA — Santo Domingo (Nov 2019 – Nov 2021)</strong><br>
-- Inventory, order prep, and ERP updates to maintain availability.</p>
+<!-- ===== Skills (bloque corto) ===== -->
+<section class="soft-hero reveal reveal-up" style="margin-top:1rem;">
+<h2 class="anchored">
+Skills
+</h2>
+<p>
+<strong>People &amp; Culture:</strong> Compensation &amp; Benefits, Employee Services, Onboarding, Internal Comms
+</p>
+<p>
+<strong>Tools:</strong> Excel (dashboards), Word (official documents), Outlook (coordination)
+</p>
+<p>
+<strong>Professional:</strong> Teamwork, Problem-Solving, Time Management, Attention to Detail
+</p>
 </section>
-</section>
-<section id="skills" class="level2">
-<h2 class="anchored" data-anchor-id="skills">Skills</h2>
-<ul>
-<li><strong>People &amp; Culture:</strong> Compensation &amp; Benefits, Employee Services, Onboarding, Internal Comms<br>
-</li>
-<li><strong>Tools:</strong> Excel (dashboards), Word (official documents), Outlook (coordination)<br>
-</li>
-<li><strong>Professional:</strong> Teamwork, Problem-Solving, Time Management, Attention to Detail<br>
-</li>
-<li><strong>Languages:</strong> Spanish (native), English (professional)</li>
-</ul>
-</section>
-<section id="download-resume" class="level2">
-<h2 class="anchored" data-anchor-id="download-resume">Download Resume</h2>
-<p><a href="MichelleRicart_Resume.pdf">Download PDF</a></p>
 
 
-</section>
 
 </main> <!-- /main -->
+// scripts.js — revela elementos al hacer scroll (animaciones suaves)
+
+document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
+
+  const els = document.querySelectorAll(&quot;.reveal&quot;);
+
+  const io = new IntersectionObserver((entries) =&gt; {
+
+    entries.forEach((e) =&gt; {
+
+      if (e.isIntersecting) {
+
+        e.target.classList.add(&quot;is-visible&quot;);
+
+        io.unobserve(e.target);
+
+      }
+
+    });
+
+  }, { threshold: 0.12 });
+
+
+
+  els.forEach((el, i) =&gt; {
+
+    // escalona la entrada automáticamente (stagger)
+
+    if (!el.style.getPropertyValue(&quot;--delay&quot;)) {
+
+      el.style.setProperty(&quot;--delay&quot;, (i * 60) + &quot;ms&quot;);
+
+    }
+
+    io.observe(el);
+
+  });
+
+});
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

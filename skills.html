@@ -3963,10 +3963,112 @@ a:hover{ text-decoration: underline; }
 
 /* Appendix: envolver verbatim (sin scroll horizontal) */
 pre, pre code{ white-space: pre-wrap; word-break: break-word; }
+/* ===== Animaciones base y accesibilidad ===== */
+.reveal{
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+  transition-delay: var(--delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal.is-visible{
+  opacity: 1;
+  transform: none;
+}
+.reveal-up{ transform: translateY(16px); }
+.reveal-right{ transform: translateX(18px); }
+.reveal-zoom{ transform: scale(.98); }
+
+@media (prefers-reduced-motion: reduce){
+  .reveal, .reveal.is-visible{
+    opacity: 1 !important; transform: none !important; transition: none !important;
+  }
+}
+
+/* ===== Hero suave con gradiente/luces pastel (muy profesional) ===== */
+.soft-hero{
+  position: relative;
+  padding: 2.5rem 1.25rem;
+  background: linear-gradient(180deg, var(--surface) 0%, #fff 100%);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+.soft-hero::before{
+  content:"";
+  position:absolute; inset:-60px -20px -40px -20px;
+  background:
+    radial-gradient(120px 120px at 15% 20%, rgba(189,224,254,.55), transparent 60%),
+    radial-gradient(160px 160px at 85% 30%, rgba(232,162,176,.35), transparent 60%),
+    radial-gradient(160px 160px at 40% 85%, rgba(137,168,216,.35), transparent 60%);
+  filter: blur(20px);
+  opacity:.6;
+  animation: floaty 28s ease-in-out infinite alternate;
+  pointer-events:none;
+}
+@keyframes floaty{
+  from{ transform: translate3d(-2%, -2%, 0) scale(1); }
+  to  { transform: translate3d( 2%,  2%, 0) scale(1.03); }
+}
+
+/* ===== Tarjetas pro con “lift” sutil ===== */
+.card.lift{
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card.lift:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.10);
+}
+
+/* ===== Chips ordenados (ya usas .badge) — micro hover ===== */
+.badge{ transition: transform .15s ease; }
+.badge:hover{ transform: translateY(-2px); }
+
+/* ===== Línea de tiempo para Resume ===== */
+.timeline{
+  position: relative; margin-left: .5rem; padding-left: 1.5rem;
+}
+.timeline::before{
+  content:""; position:absolute; left:.4rem; top:.2rem; bottom:.2rem;
+  width:3px; background: var(--bs-border-color);
+}
+.timeline-item{
+  position: relative; margin: 1.1rem 0;
+}
+.timeline-item::before{
+  content:""; position:absolute; left:-.2rem; top:.35rem;
+  width:12px; height:12px; border-radius:50%;
+  background: var(--bs-primary);
+  box-shadow: 0 0 0 3px var(--surface-2);
+}
+
+/* ===== Página por página: acentos de color ===== */
+body.home   .soft-hero::before{ opacity:.65; }
+body.resume .soft-hero::before{
+  background:
+    radial-gradient(140px 140px at 80% 25%, rgba(168,230,207,.45), transparent 60%),
+    radial-gradient(140px 140px at 20% 70%, rgba(137,168,216,.40), transparent 60%);
+}
+body.projects .soft-hero::before{
+  background:
+    radial-gradient(150px 150px at 25% 20%, rgba(189,224,254,.50), transparent 60%),
+    radial-gradient(150px 150px at 75% 80%, rgba(255,232,161,.45), transparent 60%);
+}
+body.skills .soft-hero::before{
+  background:
+    radial-gradient(160px 160px at 15% 80%, rgba(232,162,176,.35), transparent 60%),
+    radial-gradient(160px 160px at 85% 25%, rgba(189,224,254,.50), transparent 60%);
+}
+body.contact .soft-hero::before{
+  background:
+    radial-gradient(160px 160px at 20% 25%, rgba(137,168,216,.45), transparent 60%),
+    radial-gradient(160px 160px at 80% 75%, rgba(168,230,207,.45), transparent 60%);
+}
 </style>
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed skills quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -4033,16 +4135,8 @@ pre, pre code{ white-space: pre-wrap; word-break: break-word; }
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#core-skills" id="toc-core-skills" class="nav-link active" data-scroll-target="#core-skills">Core Skills</a></li>
-  <li><a href="#certifications" id="toc-certifications" class="nav-link" data-scroll-target="#certifications">Certifications</a></li>
-  <li><a href="#tools-methods" id="toc-tools-methods" class="nav-link" data-scroll-target="#tools-methods">Tools &amp; Methods</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -4066,31 +4160,90 @@ pre, pre code{ white-space: pre-wrap; word-break: break-word; }
 </header>
 
 
-<section id="core-skills" class="level3">
-<h3 class="anchored" data-anchor-id="core-skills">Core Skills</h3>
-<p><span class="badge">Compensation &amp; Benefits</span> <span class="badge">Employee Services</span> <span class="badge">Onboarding</span> <span class="badge">Internal Communications</span> <span class="badge">Excel (dashboards)</span> <span class="badge">Time Management</span> <span class="badge">Problem-Solving</span> <span class="badge">Teamwork</span> <span class="badge">Customer Service</span> <span class="badge">Spanish &amp; English</span></p>
+<section class="soft-hero reveal reveal-up">
+<h2 class="anchored">
+Core Skills
+</h2>
+<p class="reveal reveal-up" style="--delay:120ms;">
+<span class="badge">Compensation &amp; Benefits</span> <span class="badge">Employee Services</span> <span class="badge">Onboarding</span> <span class="badge">Internal Communications</span> <span class="badge">Excel (dashboards)</span> <span class="badge">Time Management</span> <span class="badge">Problem-Solving</span> <span class="badge">Teamwork</span> <span class="badge">Customer Service</span> <span class="badge">Spanish &amp; English</span>
+</p>
 </section>
-<section id="certifications" class="level3">
-<h3 class="anchored" data-anchor-id="certifications">Certifications</h3>
-<ul>
-<li>FoodSafe Level 1 — <em>June 2025</em></li>
-<li>Other HR/People Ops coursework — <em>January 2023</em></li>
+<section class="soft-hero reveal reveal-up" style="margin-top:1rem;">
+<h2 class="anchored">
+Certifications
+</h2>
+<ul class="reveal reveal-up" style="--delay:120ms;">
+<li>
+<strong>FoodSafe Level 1</strong> — <em>June 2025</em>
+</li>
+<li>
+<strong>HR/People Ops coursework</strong> — <em>January 2023</em>
+</li>
+</ul>
+<p class="reveal reveal-up" style="--delay:220ms; margin-top:.5rem;">
+<a class="btn btn-outline-secondary" href="MichelleRicart_Resume.pdf" target="_blank" rel="noopener" download> See full details in my Resume (PDF) </a>
+</p>
+</section>
+<section class="soft-hero reveal reveal-up" style="margin-top:1rem;">
+<h2 class="anchored">
+Tools &amp; Methods
+</h2>
+<ul class="reveal reveal-up" style="--delay:120ms;">
+<li>
+<strong>Microsoft Excel</strong>, <strong>Word</strong>, <strong>Outlook</strong>
+</li>
+<li>
+<strong>Quarto/Markdown</strong> for documentation and reporting
+</li>
+<li>
+Basic data visualization (charts, dashboards)
+</li>
 </ul>
 </section>
-<section id="tools-methods" class="level3">
-<h3 class="anchored" data-anchor-id="tools-methods">Tools &amp; Methods</h3>
-<ul>
-<li>Microsoft Excel, Word, Outlook<br>
-</li>
-<li>Quarto/Markdown for documentation and reporting<br>
-</li>
-<li>Basic data visualization (charts, dashboards)</li>
-</ul>
 
 
-</section>
 
 </main> <!-- /main -->
+// scripts.js — revela elementos al hacer scroll (animaciones suaves)
+
+document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
+
+  const els = document.querySelectorAll(&quot;.reveal&quot;);
+
+  const io = new IntersectionObserver((entries) =&gt; {
+
+    entries.forEach((e) =&gt; {
+
+      if (e.isIntersecting) {
+
+        e.target.classList.add(&quot;is-visible&quot;);
+
+        io.unobserve(e.target);
+
+      }
+
+    });
+
+  }, { threshold: 0.12 });
+
+
+
+  els.forEach((el, i) =&gt; {
+
+    // escalona la entrada automáticamente (stagger)
+
+    if (!el.style.getPropertyValue(&quot;--delay&quot;)) {
+
+      el.style.setProperty(&quot;--delay&quot;, (i * 60) + &quot;ms&quot;);
+
+    }
+
+    io.observe(el);
+
+  });
+
+});
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

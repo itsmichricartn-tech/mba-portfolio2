@@ -3963,10 +3963,112 @@ a:hover{ text-decoration: underline; }
 
 /* Appendix: envolver verbatim (sin scroll horizontal) */
 pre, pre code{ white-space: pre-wrap; word-break: break-word; }
+/* ===== Animaciones base y accesibilidad ===== */
+.reveal{
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+  transition-delay: var(--delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal.is-visible{
+  opacity: 1;
+  transform: none;
+}
+.reveal-up{ transform: translateY(16px); }
+.reveal-right{ transform: translateX(18px); }
+.reveal-zoom{ transform: scale(.98); }
+
+@media (prefers-reduced-motion: reduce){
+  .reveal, .reveal.is-visible{
+    opacity: 1 !important; transform: none !important; transition: none !important;
+  }
+}
+
+/* ===== Hero suave con gradiente/luces pastel (muy profesional) ===== */
+.soft-hero{
+  position: relative;
+  padding: 2.5rem 1.25rem;
+  background: linear-gradient(180deg, var(--surface) 0%, #fff 100%);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+.soft-hero::before{
+  content:"";
+  position:absolute; inset:-60px -20px -40px -20px;
+  background:
+    radial-gradient(120px 120px at 15% 20%, rgba(189,224,254,.55), transparent 60%),
+    radial-gradient(160px 160px at 85% 30%, rgba(232,162,176,.35), transparent 60%),
+    radial-gradient(160px 160px at 40% 85%, rgba(137,168,216,.35), transparent 60%);
+  filter: blur(20px);
+  opacity:.6;
+  animation: floaty 28s ease-in-out infinite alternate;
+  pointer-events:none;
+}
+@keyframes floaty{
+  from{ transform: translate3d(-2%, -2%, 0) scale(1); }
+  to  { transform: translate3d( 2%,  2%, 0) scale(1.03); }
+}
+
+/* ===== Tarjetas pro con “lift” sutil ===== */
+.card.lift{
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card.lift:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.10);
+}
+
+/* ===== Chips ordenados (ya usas .badge) — micro hover ===== */
+.badge{ transition: transform .15s ease; }
+.badge:hover{ transform: translateY(-2px); }
+
+/* ===== Línea de tiempo para Resume ===== */
+.timeline{
+  position: relative; margin-left: .5rem; padding-left: 1.5rem;
+}
+.timeline::before{
+  content:""; position:absolute; left:.4rem; top:.2rem; bottom:.2rem;
+  width:3px; background: var(--bs-border-color);
+}
+.timeline-item{
+  position: relative; margin: 1.1rem 0;
+}
+.timeline-item::before{
+  content:""; position:absolute; left:-.2rem; top:.35rem;
+  width:12px; height:12px; border-radius:50%;
+  background: var(--bs-primary);
+  box-shadow: 0 0 0 3px var(--surface-2);
+}
+
+/* ===== Página por página: acentos de color ===== */
+body.home   .soft-hero::before{ opacity:.65; }
+body.resume .soft-hero::before{
+  background:
+    radial-gradient(140px 140px at 80% 25%, rgba(168,230,207,.45), transparent 60%),
+    radial-gradient(140px 140px at 20% 70%, rgba(137,168,216,.40), transparent 60%);
+}
+body.projects .soft-hero::before{
+  background:
+    radial-gradient(150px 150px at 25% 20%, rgba(189,224,254,.50), transparent 60%),
+    radial-gradient(150px 150px at 75% 80%, rgba(255,232,161,.45), transparent 60%);
+}
+body.skills .soft-hero::before{
+  background:
+    radial-gradient(160px 160px at 15% 80%, rgba(232,162,176,.35), transparent 60%),
+    radial-gradient(160px 160px at 85% 25%, rgba(189,224,254,.50), transparent 60%);
+}
+body.contact .soft-hero::before{
+  background:
+    radial-gradient(160px 160px at 20% 25%, rgba(137,168,216,.45), transparent 60%),
+    radial-gradient(160px 160px at 80% 75%, rgba(168,230,207,.45), transparent 60%);
+}
 </style>
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed projects quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -4058,55 +4160,97 @@ pre, pre code{ white-space: pre-wrap; word-break: break-word; }
 </header>
 
 
-<p>Below are selected projects. Each includes a short overview, my role, and outcomes.</p>
+<section class="soft-hero reveal reveal-up">
+<h2 class="anchored">
+Selected Projects
+</h2>
+<p>
+Below are selected projects. Each includes a short overview, my role, and outcomes.
+</p>
+<!-- Opcional: chips por categoría -->
+<div class="reveal reveal-up" style="--delay:120ms; margin:.25rem 0 1rem 0;">
+<pre><code>&lt;span class=&quot;badge&quot;&gt;HR Analytics&lt;/span&gt;
+&lt;span class=&quot;badge&quot;&gt;Career Design&lt;/span&gt;
+&lt;span class=&quot;badge&quot;&gt;Quarto Reports&lt;/span&gt;</code></pre>
+</div>
 <div class="cards">
-<div class="card">
-<h3 class="anchored">
-TriMetrix → Career Pathways
-</h3>
-<p>
-<strong>Overview:</strong> Used DISC, Driving Forces, and Competencies to align roles and development paths.
-</p>
-<p>
-<strong>Role:</strong> Analyst and presenter.
-</p>
-<p>
-<strong>Outcome:</strong> Clear role-fit insights and a learning plan mapped to goals.
-</p>
+<pre><code>&lt;div class=&quot;card lift reveal reveal-up&quot; style=&quot;--delay:0ms;&quot;&gt;
+  &lt;h3&gt;TriMetrix → Career Pathways&lt;/h3&gt;
+  &lt;p&gt;&lt;strong&gt;Overview:&lt;/strong&gt; Used DISC, Driving Forces, and Competencies to align roles and development paths.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Analyst and presenter.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Outcome:&lt;/strong&gt; Clear role-fit insights and a learning plan mapped to goals.&lt;/p&gt;
+  &lt;div style=&quot;display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;&quot;&gt;
+    &lt;a class=&quot;btn btn-sm btn-outline-secondary&quot; href=&quot;#&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PDF (add link)&lt;/a&gt;
+    &lt;a class=&quot;btn btn-sm btn-outline-secondary&quot; href=&quot;#&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Slides (add link)&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card lift reveal reveal-up&quot; style=&quot;--delay:140ms;&quot;&gt;
+  &lt;h3&gt;Odyssey Life Design (ILDP)&lt;/h3&gt;
+  &lt;p&gt;&lt;strong&gt;Overview:&lt;/strong&gt; Multi-year plan with SMART metrics and 70-20-10 activities.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Author — designed alternatives, risks, and milestones.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Outcome:&lt;/strong&gt; Actionable roadmap and reflection framework.&lt;/p&gt;
+  &lt;div style=&quot;display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;&quot;&gt;
+    &lt;a class=&quot;btn btn-sm btn-outline-secondary&quot; href=&quot;#&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PDF (add link)&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card lift reveal reveal-up&quot; style=&quot;--delay:280ms;&quot;&gt;
+  &lt;h3&gt;Marketing &amp; Analytics Coursework&lt;/h3&gt;
+  &lt;p&gt;&lt;strong&gt;Overview:&lt;/strong&gt; Quarto reports, strategy memos, and simple dashboards for class cases.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Analyst and writer.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Outcome:&lt;/strong&gt; Clear communication of findings; reproducible reports in Markdown.&lt;/p&gt;
+  &lt;div style=&quot;display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;&quot;&gt;
+    &lt;a class=&quot;btn btn-sm btn-outline-secondary&quot; href=&quot;#&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Repo (add link)&lt;/a&gt;
+    &lt;a class=&quot;btn btn-sm btn-outline-secondary&quot; href=&quot;#&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Report (add link)&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
-<div class="card">
-<h3 class="anchored">
-Odyssey Life Design (ILDP)
-</h3>
-<p>
-<strong>Overview:</strong> Multi-year plan with SMART metrics and 70-20-10 activities.
-</p>
-<p>
-<strong>Role:</strong> Author — designed alternatives, risks, and milestones.
-</p>
-<p>
-<strong>Outcome:</strong> Actionable roadmap and reflection framework.
-</p>
-</div>
-<div class="card">
-<h3 class="anchored">
-Marketing &amp; Analytics Coursework
-</h3>
-<p>
-<strong>Overview:</strong> Quarto reports, strategy memos, and simple dashboards for class cases.
-</p>
-<p>
-<strong>Role:</strong> Analyst and writer.
-</p>
-<p>
-<strong>Outcome:</strong> Clear communication of findings; reproducible reports in Markdown.
-</p>
-</div>
-</div>
+</section>
 
 
 
 </main> <!-- /main -->
+// scripts.js — revela elementos al hacer scroll (animaciones suaves)
+
+document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
+
+  const els = document.querySelectorAll(&quot;.reveal&quot;);
+
+  const io = new IntersectionObserver((entries) =&gt; {
+
+    entries.forEach((e) =&gt; {
+
+      if (e.isIntersecting) {
+
+        e.target.classList.add(&quot;is-visible&quot;);
+
+        io.unobserve(e.target);
+
+      }
+
+    });
+
+  }, { threshold: 0.12 });
+
+
+
+  els.forEach((el, i) =&gt; {
+
+    // escalona la entrada automáticamente (stagger)
+
+    if (!el.style.getPropertyValue(&quot;--delay&quot;)) {
+
+      el.style.setProperty(&quot;--delay&quot;, (i * 60) + &quot;ms&quot;);
+
+    }
+
+    io.observe(el);
+
+  });
+
+});
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

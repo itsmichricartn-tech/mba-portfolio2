@@ -1,34 +1,62 @@
 ---
 title: "Home"
+body-classes: home
 pagetitle: "Michelle Marie Ricart — MBA Portfolio"
 image: headshot.jpg
 ---
 
 <div class="hero">
-<img src="headshot.jpg" alt="Professional headshot of Michelle Marie Ricart" class="headshot" />
-<h1>Michelle Marie Ricart Naranjo</h1>
-<p><em>MBA Candidate · University Canada West (UCW) · Vancouver, BC</em></p>
-<p>I have a degree in people-oriented industrial psychology, with experience in <strong> Human Resources </strong>, mainly in the <strong>compensation and benefits </strong>  department, recruitment, and onboarding processes. I am currently developing my <strong>culinary skills </strong> in Vancouver, British Columbia.  I define myself by always prioritizing customer service, prioritizing clarity and reliability in processes, thereby positively transforming the decisions that can be made to have a positive impact on the future of companies and their operations. </p>
-<div class="footer-cta">
-<a class="btn btn-primary" href="resume.html" role="button">View Resume</a>
-<a class="btn btn-outline-secondary" href="projects.html" role="button">View Projects</a>
-<a class="btn btn-outline-secondary" href="appendix.html" role="button">Appendix</a>
+<section class="soft-hero reveal reveal-up">
+  <div style="display:flex; gap:1rem; align-items:center;">
+    <img src="headshot.jpg" alt="Professional headshot of Michelle Marie Ricart" class="headshot" />
+    <div>
+      <h1 class="reveal reveal-up" style="--delay:120ms;">Michelle Marie Ricart Naranjo</h1>
+      <p class="reveal reveal-up" style="--delay:220ms;">
+        <em>MBA Candidate · University Canada West (UCW) · Vancouver, BC</em>
+      </p>
+    </div>
+  </div>
+
+  <p class="reveal reveal-up" style="--delay:320ms;">
+    I have a degree in people-oriented industrial psychology, with experience in
+    <strong>Human Resources</strong>, mainly in the <strong>Compensation and Benefits</strong>
+    department, recruitment, and onboarding processes. I am currently developing my
+    <strong>culinary skills</strong> in Vancouver, British Columbia. I always prioritize customer
+    service, clarity, and reliability in processes, helping transform decisions into
+    positive impact for companies and their operations.
+  </p>
+
+  <div class="footer-cta reveal reveal-up" style="--delay:420ms;">
+    <a class="btn btn-primary" href="resume.html" role="button">View Resume</a>
+    <a class="btn btn-outline-secondary" href="projects.html" role="button">View Projects</a>
+    <a class="btn btn-outline-secondary" href="appendix.html" role="button">Appendix</a>
+  </div>
+</section>
+
+<!-- Highlights -->
+<div class="reveal reveal-up" style="--delay:160ms; margin-top:1rem;">
+  <h3>Highlights</h3>
+  <ul>
+    <li>3+ years in HR at Shell Dominican Republic: employee service, internal/external client support, documentation, and monthly metrics.</li>
+    <li>Culinary practice in high-speed environments focused on organization, teamwork, and high-quality standards.</li>
+  </ul>
 </div>
+
+<!-- Bilingual -->
+<div class="reveal reveal-up" style="--delay:220ms; margin-top:.5rem;">
+  <h3>Bilingual</h3>
+  <ul>
+    <li>Spanish (Native)</li>
+    <li>English (Second Language)</li>
+  </ul>
 </div>
 
-## Highlights
-- More than 3 years of experience in Human Resources at Shell Dominican Republic, serving employees, internal and external clients, managing internal documentation, and creating monthly metrics.
-- Practices in the culinary field that require high speed, focused on organization, teamwork, and the preparation of food dishes with high quality standards.
-
-
-## Bilingual
-
-- Spanish (Native)
-- English (Second Language)
-
-
-## Recent Focus
-- Personnel leadership in a multicultural approach.
-- Creation of clear documentation and quality control dashboards for decision-making.
-- Preparation and continuous development for my personal brand and professional career using the Quarto tool.
-
+<!-- Recent Focus -->
+<div class="reveal reveal-up" style="--delay:280ms; margin-top:.5rem;">
+  <h3>Recent Focus</h3>
+  <ul>
+    <li>People leadership in multicultural contexts.</li>
+    <li>Clear documentation and quality-control dashboards for decision-making.</li>
+    <li>Ongoing personal brand and career development using Quarto.</li>
+  </ul>
+</div>

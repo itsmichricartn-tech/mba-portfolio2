@@ -3963,10 +3963,112 @@ a:hover{ text-decoration: underline; }
 
 /* Appendix: envolver verbatim (sin scroll horizontal) */
 pre, pre code{ white-space: pre-wrap; word-break: break-word; }
+/* ===== Animaciones base y accesibilidad ===== */
+.reveal{
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+  transition-delay: var(--delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal.is-visible{
+  opacity: 1;
+  transform: none;
+}
+.reveal-up{ transform: translateY(16px); }
+.reveal-right{ transform: translateX(18px); }
+.reveal-zoom{ transform: scale(.98); }
+
+@media (prefers-reduced-motion: reduce){
+  .reveal, .reveal.is-visible{
+    opacity: 1 !important; transform: none !important; transition: none !important;
+  }
+}
+
+/* ===== Hero suave con gradiente/luces pastel (muy profesional) ===== */
+.soft-hero{
+  position: relative;
+  padding: 2.5rem 1.25rem;
+  background: linear-gradient(180deg, var(--surface) 0%, #fff 100%);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+.soft-hero::before{
+  content:"";
+  position:absolute; inset:-60px -20px -40px -20px;
+  background:
+    radial-gradient(120px 120px at 15% 20%, rgba(189,224,254,.55), transparent 60%),
+    radial-gradient(160px 160px at 85% 30%, rgba(232,162,176,.35), transparent 60%),
+    radial-gradient(160px 160px at 40% 85%, rgba(137,168,216,.35), transparent 60%);
+  filter: blur(20px);
+  opacity:.6;
+  animation: floaty 28s ease-in-out infinite alternate;
+  pointer-events:none;
+}
+@keyframes floaty{
+  from{ transform: translate3d(-2%, -2%, 0) scale(1); }
+  to  { transform: translate3d( 2%,  2%, 0) scale(1.03); }
+}
+
+/* ===== Tarjetas pro con “lift” sutil ===== */
+.card.lift{
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card.lift:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.10);
+}
+
+/* ===== Chips ordenados (ya usas .badge) — micro hover ===== */
+.badge{ transition: transform .15s ease; }
+.badge:hover{ transform: translateY(-2px); }
+
+/* ===== Línea de tiempo para Resume ===== */
+.timeline{
+  position: relative; margin-left: .5rem; padding-left: 1.5rem;
+}
+.timeline::before{
+  content:""; position:absolute; left:.4rem; top:.2rem; bottom:.2rem;
+  width:3px; background: var(--bs-border-color);
+}
+.timeline-item{
+  position: relative; margin: 1.1rem 0;
+}
+.timeline-item::before{
+  content:""; position:absolute; left:-.2rem; top:.35rem;
+  width:12px; height:12px; border-radius:50%;
+  background: var(--bs-primary);
+  box-shadow: 0 0 0 3px var(--surface-2);
+}
+
+/* ===== Página por página: acentos de color ===== */
+body.home   .soft-hero::before{ opacity:.65; }
+body.resume .soft-hero::before{
+  background:
+    radial-gradient(140px 140px at 80% 25%, rgba(168,230,207,.45), transparent 60%),
+    radial-gradient(140px 140px at 20% 70%, rgba(137,168,216,.40), transparent 60%);
+}
+body.projects .soft-hero::before{
+  background:
+    radial-gradient(150px 150px at 25% 20%, rgba(189,224,254,.50), transparent 60%),
+    radial-gradient(150px 150px at 75% 80%, rgba(255,232,161,.45), transparent 60%);
+}
+body.skills .soft-hero::before{
+  background:
+    radial-gradient(160px 160px at 15% 80%, rgba(232,162,176,.35), transparent 60%),
+    radial-gradient(160px 160px at 85% 25%, rgba(189,224,254,.50), transparent 60%);
+}
+body.contact .soft-hero::before{
+  background:
+    radial-gradient(160px 160px at 20% 25%, rgba(137,168,216,.45), transparent 60%),
+    radial-gradient(160px 160px at 80% 75%, rgba(168,230,207,.45), transparent 60%);
+}
 </style>
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed contact quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -4058,19 +4160,76 @@ pre, pre code{ white-space: pre-wrap; word-break: break-word; }
 </header>
 
 
-<ul>
-<li>📍 Vancouver, BC, Canada<br>
-</li>
-<li>✉️ <a href="mailto:itsmichricartn@gmail.com">itsmichricartn@gmail.com</a><br>
-</li>
-<li>🔗 <a href="https://www.linkedin.com/in/michelle-marie-ricart-naranjo-042628199/" target="_blank" rel="noopener">LinkedIn </a><br>
-</li>
-<li>📄 <a href="MichelleRicart_Resume.pdf" target="_blank" rel="noopener" download>Download Resume (PDF)</a></li>
-</ul>
+<section class="soft-hero reveal reveal-up">
+<h2 class="anchored">
+Get in touch
+</h2>
+<p class="reveal reveal-up" style="--delay:120ms;">
+📍 Vancouver, BC, Canada<br> ✉️ <a href="mailto:itsmichricartn@gmail.com" aria-label="Email Michelle Ricart">itsmichricartn@gmail.com</a><br> 🔗 <a href="https://www.linkedin.com/in/michelle-marie-ricart-naranjo-042628199/" target="_blank" rel="noopener" aria-label="Open Michelle&#39;s LinkedIn in a new tab">LinkedIn</a>
+</p>
+<div class="reveal reveal-up" style="--delay:220ms; display:flex; gap:.5rem; flex-wrap:wrap;">
+<pre><code>&lt;a class=&quot;btn btn-primary&quot; href=&quot;MichelleRicart_Resume.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; download&gt;
+  Download Resume (PDF)
+&lt;/a&gt;
+&lt;a class=&quot;btn btn-outline-secondary&quot;
+   href=&quot;mailto:itsmichricartn@gmail.com?subject=Contact%20from%20MBA%20portfolio&amp;body=Hi%20Michelle,%20I%27d%20like%20to%20connect%20about...&quot;
+   aria-label=&quot;Write me an email now&quot;&gt;
+  Email me
+&lt;/a&gt;
+&lt;a class=&quot;btn btn-outline-secondary&quot;
+   href=&quot;https://www.linkedin.com/in/michelle-marie-ricart-naranjo-042628199/&quot;
+   target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  View LinkedIn
+&lt;/a&gt;</code></pre>
+</div>
+<p class="reveal reveal-up" style="--delay:320ms; margin-top:1rem;">
+Prefer a quick intro? Send me a short note with your topic and availability — I’ll get back to you promptly.
+</p>
+</section>
 
 
 
 </main> <!-- /main -->
+// scripts.js — revela elementos al hacer scroll (animaciones suaves)
+
+document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
+
+  const els = document.querySelectorAll(&quot;.reveal&quot;);
+
+  const io = new IntersectionObserver((entries) =&gt; {
+
+    entries.forEach((e) =&gt; {
+
+      if (e.isIntersecting) {
+
+        e.target.classList.add(&quot;is-visible&quot;);
+
+        io.unobserve(e.target);
+
+      }
+
+    });
+
+  }, { threshold: 0.12 });
+
+
+
+  els.forEach((el, i) =&gt; {
+
+    // escalona la entrada automáticamente (stagger)
+
+    if (!el.style.getPropertyValue(&quot;--delay&quot;)) {
+
+      el.style.setProperty(&quot;--delay&quot;, (i * 60) + &quot;ms&quot;);
+
+    }
+
+    io.observe(el);
+
+  });
+
+});
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

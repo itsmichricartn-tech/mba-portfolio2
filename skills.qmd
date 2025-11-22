@@ -1,24 +1,44 @@
 ---
 title: "Skills & Certifications"
+body-classes: skills
 ---
 
-### Core Skills
-<span class="badge">Compensation & Benefits</span>
-<span class="badge">Employee Services</span>
-<span class="badge">Onboarding</span>
-<span class="badge">Internal Communications</span>
-<span class="badge">Excel (dashboards)</span>
-<span class="badge">Time Management</span>
-<span class="badge">Problem-Solving</span>
-<span class="badge">Teamwork</span>
-<span class="badge">Customer Service</span>
-<span class="badge">Spanish & English</span>
 
-### Certifications 
-- FoodSafe Level 1 — *June 2025*
-- Other HR/People Ops coursework — *January 2023*
+<section class="soft-hero reveal reveal-up">
+  <h2>Core Skills</h2>
+  <p class="reveal reveal-up" style="--delay:120ms;">
+    <span class="badge">Compensation & Benefits</span>
+    <span class="badge">Employee Services</span>
+    <span class="badge">Onboarding</span>
+    <span class="badge">Internal Communications</span>
+    <span class="badge">Excel (dashboards)</span>
+    <span class="badge">Time Management</span>
+    <span class="badge">Problem-Solving</span>
+    <span class="badge">Teamwork</span>
+    <span class="badge">Customer Service</span>
+    <span class="badge">Spanish & English</span>
+  </p>
+</section>
 
-### Tools & Methods
-- Microsoft Excel, Word, Outlook  
-- Quarto/Markdown for documentation and reporting  
-- Basic data visualization (charts, dashboards)
+<section class="soft-hero reveal reveal-up" style="margin-top:1rem;">
+  <h2>Certifications</h2>
+  <ul class="reveal reveal-up" style="--delay:120ms;">
+    <li><strong>FoodSafe Level 1</strong> — <em>June 2025</em></li>
+    <li><strong>HR/People Ops coursework</strong> — <em>January 2023</em></li>
+  </ul>
+  <p class="reveal reveal-up" style="--delay:220ms; margin-top:.5rem;">
+    <a class="btn btn-outline-secondary" href="MichelleRicart_Resume.pdf" target="_blank" rel="noopener" download>
+      See full details in my Resume (PDF)
+    </a>
+  </p>
+</section>
+
+<section class="soft-hero reveal reveal-up" style="margin-top:1rem;">
+  <h2>Tools & Methods</h2>
+  <ul class="reveal reveal-up" style="--delay:120ms;">
+    <li><strong>Microsoft Excel</strong>, <strong>Word</strong>, <strong>Outlook</strong></li>
+    <li><strong>Quarto/Markdown</strong> for documentation and reporting</li>
+    <li>Basic data visualization (charts, dashboards)</li>
+  </ul>
+</section>
+
