@@ -3,6 +3,7 @@ title: "Home"
 body-classes: home
 ---
 
+```{=html}
 <section class="soft-hero lush">
   <div style="display:flex; gap:1rem; align-items:center;">
     <img src="headshot.jpg"
@@ -14,6 +15,7 @@ body-classes: home
     </div>
   </div>
 </section>
+```
 
 
 # Michelle Marie Ricart Naranjo

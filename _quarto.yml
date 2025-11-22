@@ -1,10 +1,6 @@
 project:
   type: website
-  output-dir: .
-  resources:
-    - scripts.js
-    - headshot.jpg
-    - MichelleRicart_Resume.pdf
+  output-dir: _site
 
 website:
   title: "Michelle Marie Ricart — MBA Portfolio"
@@ -21,7 +17,6 @@ website:
         text: Skills & Certifications
       - href: contact.qmd
         text: Contact
-    right:
       - href: reflection.qmd
         text: Reflection
       - href: appendix.qmd
@@ -30,8 +25,9 @@ website:
 format:
   html:
     theme: litera
-    css: styles.css
+    css: styles.scss
     toc: true
     toc-location: right
     include-after-body: includes/scripts.html
+
 
