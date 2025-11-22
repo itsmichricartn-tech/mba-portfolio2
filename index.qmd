@@ -8,7 +8,7 @@ image: headshot.jpg
 <img src="headshot.jpg" alt="Professional headshot of Michelle Marie Ricart" class="headshot" />
 <h1>Michelle Marie Ricart Naranjo</h1>
 <p><em>MBA Candidate · University Canada West (UCW) · Vancouver, BC</em></p>
-<p>I have a degree in people-oriented industrial psychology, with experience in <strong> human resources <strong>, mainly in the <strong>compensation and benefits <strong>  department, recruitment, and onboarding processes. I am currently developing my <strong>culinary <strong> skills in Vancouver, British Columbia.  I define myself by always prioritizing customer service, prioritizing clarity and reliability in processes, thereby positively transforming the decisions that can be made to have a positive impact on the future of companies and their operations. </p>
+<p>I have a degree in people-oriented industrial psychology, with experience in <strong> Human Resources </strong>, mainly in the <strong>compensation and benefits </strong>  department, recruitment, and onboarding processes. I am currently developing my <strong>culinary skills </strong> in Vancouver, British Columbia.  I define myself by always prioritizing customer service, prioritizing clarity and reliability in processes, thereby positively transforming the decisions that can be made to have a positive impact on the future of companies and their operations. </p>
 <div class="footer-cta">
 <a class="btn btn-primary" href="resume.html" role="button">View Resume</a>
 <a class="btn btn-outline-secondary" href="projects.html" role="button">View Projects</a>
