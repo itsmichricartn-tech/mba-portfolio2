@@ -15,6 +15,7 @@ body-classes: skills
 <span class="badge">Customer Service</span>
 <span class="badge">Spanish & English</span>
 
+
 ### Certifications 
 - FoodSafe Level 1 — *June 2025*
 - Other HR/People Ops coursework — *January 2023*

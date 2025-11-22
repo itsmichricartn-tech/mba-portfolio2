@@ -30,7 +30,7 @@ website:
 format:
   html:
     theme: litera
-    css: styles.scss
+    css: styles.css
     toc: true
     toc-location: right
     include-after-body: includes/scripts.html
