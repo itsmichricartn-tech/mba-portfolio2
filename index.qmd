@@ -3,8 +3,18 @@ title: "Home"
 body-classes: home
 ---
 
-::: {.soft-hero .reveal .reveal-up}
-![](headshot.jpg){.headshot width=148 height=148 fig-alt="Professional headshot of Michelle Marie Ricart"}
+<section class="soft-hero lush">
+  <div style="display:flex; gap:1rem; align-items:center;">
+    <img src="headshot.jpg"
+         alt="Professional headshot of Michelle Marie Ricart"
+         class="headshot" width="148" height="148">
+    <div>
+      <h1>Michelle Marie Ricart Naranjo</h1>
+      <p><em>MBA Candidate · University Canada West (UCW) · Vancouver, BC</em></p>
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -19,7 +29,6 @@ I have a degree in people-oriented industrial psychology, with experience in **H
 [View Resume](resume.html){.btn .btn-primary role="button"}
 [View Projects](projects.html){.btn .btn-outline-secondary role="button"}
 [Appendix](appendix.html){.btn .btn-outline-secondary role="button"}
-:::
 :::
 
 ::: {.reveal .reveal-up style="--delay:160ms; margin-top:1rem;"}

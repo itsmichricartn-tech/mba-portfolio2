@@ -112,3 +112,85 @@ a:hover{ color:#3D4BD8; }
 .reveal { opacity: 1; transform: none; }
 .js .reveal { opacity: 0; transform: translateY(10px); transition: opacity .55s, transform .55s; }
 .js .reveal.visible { opacity: 1; transform: none; }
+
+/* ===== BOOST COLOR — Pastel MBA Enhancer (append at end) ===== */
+
+/* Subimos intensidad de los fondos globales (varía por body-classes) */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(1100px 800px at 12% 14%, var(--c1, rgba(108,124,255,.34)), transparent 60%),
+    radial-gradient(900px 700px at 86% 68%, var(--c2, rgba(246,184,213,.34)), transparent 60%),
+    var(--bg-soft);
+}
+
+/* Hero/tarjetas con tinte pastel */
+.soft-hero.lush{
+  background:
+    linear-gradient(135deg, rgba(108,124,255,.10), rgba(246,184,213,.10)),
+    var(--surface);
+  border:1px solid rgba(108,124,255,.25);
+  box-shadow: 0 18px 48px rgba(31,41,55,.12);
+}
+body.resume   .soft-hero.lush{ background: linear-gradient(135deg, rgba(214,217,255,.14), rgba(189,232,217,.14)), var(--surface); border-color: rgba(214,217,255,.35); }
+body.projects .soft-hero.lush{ background: linear-gradient(135deg, rgba(255,214,201,.14), rgba(108,124,255,.10)), var(--surface); border-color: rgba(255,214,201,.45); }
+body.skills   .soft-hero.lush{ background: linear-gradient(135deg, rgba(189,232,217,.16), rgba(255,231,161,.14)), var(--surface); border-color: rgba(189,232,217,.45); }
+body.contact  .soft-hero.lush{ background: linear-gradient(135deg, rgba(246,184,213,.16), rgba(214,217,255,.14)), var(--surface); border-color: rgba(246,184,213,.45); }
+body.reflection .soft-hero.lush{ background: linear-gradient(135deg, rgba(255,231,161,.16), rgba(108,124,255,.12)), var(--surface); border-color: rgba(255,231,161,.45); }
+
+/* Cualquier bloque como “tarjeta teñida” */
+.section-card.tint{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.94)),
+    radial-gradient(900px 700px at 0% -10%, var(--c1), transparent 60%),
+    radial-gradient(900px 700px at 100% 120%, var(--c2), transparent 60%);
+  border:1px solid color-mix(in srgb, var(--brand-primary) 28%, #E6EAFD);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.2rem 1.4rem;
+  margin: 1rem 0;
+}
+.section-card.tint::before{
+  content:""; display:block; height:4px; margin:-1.2rem -1.4rem 1rem;
+  border-top-left-radius: var(--radius); border-top-right-radius: var(--radius);
+  background: linear-gradient(90deg, var(--brand-primary), var(--brand-pink));
+}
+body.skills .section-card.tint::before{ background: linear-gradient(90deg, var(--brand-mint), var(--brand-gold)); }
+body.resume .section-card.tint::before{ background: linear-gradient(90deg, var(--brand-lav), var(--brand-mint)); }
+body.projects .section-card.tint::before{ background: linear-gradient(90deg, var(--brand-peach), var(--brand-primary)); }
+body.contact .section-card.tint::before{ background: linear-gradient(90deg, var(--brand-pink), var(--brand-lav)); }
+body.reflection .section-card.tint::before{ background: linear-gradient(90deg, var(--brand-gold), var(--brand-primary)); }
+
+/* Foto con aro de color por página */
+.headshot{
+  width:148px; height:148px; object-fit:cover; border-radius:9999px;
+  border:6px solid #fff;
+  box-shadow:
+    0 0 0 6px #fff,
+    0 0 0 12px rgba(108,124,255,.28),
+    0 18px 44px rgba(31,41,55,.12);
+}
+body.resume    .headshot{ box-shadow:0 0 0 6px #fff,0 0 0 12px rgba(214,217,255,.36),0 18px 44px rgba(31,41,55,.12); }
+body.projects  .headshot{ box-shadow:0 0 0 6px #fff,0 0 0 12px rgba(255,214,201,.36),0 18px 44px rgba(31,41,55,.12); }
+body.skills    .headshot{ box-shadow:0 0 0 6px #fff,0 0 0 12px rgba(189,232,217,.36),0 18px 44px rgba(31,41,55,.12); }
+body.contact   .headshot{ box-shadow:0 0 0 6px #fff,0 0 0 12px rgba(246,184,213,.36),0 18px 44px rgba(31,41,55,.12); }
+body.reflection.headshot{ box-shadow:0 0 0 6px #fff,0 0 0 12px rgba(255,231,161,.36),0 18px 44px rgba(31,41,55,.12); }
+
+/* TOC activo con degradé */
+.toc .nav-link.active{
+  background: linear-gradient(90deg, rgba(108,124,255,.22), rgba(246,184,213,.22));
+  border-radius:10px;
+}
+
+/* Chips con variantes pastel */
+.badge.gradient{ background: linear-gradient(90deg, rgba(108,124,255,.20), rgba(246,184,213,.20)) !important; border-color: transparent !important; }
+.badge.mint{  background: rgba(189,232,217,.35) !important;  border-color: transparent !important; }
+.badge.lav{   background: rgba(214,217,255,.35) !important;  border-color: transparent !important; }
+.badge.peach{ background: rgba(255,214,201,.35) !important;  border-color: transparent !important; }
+.badge.gold{  background: rgba(255,231,161,.35) !important;  border-color: transparent !important; }
+
+/* Headings con subrayado más ancho */
+h2::after{ width:120px; height:7px; }

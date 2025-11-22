@@ -4,11 +4,11 @@ body-classes: skills
 ---
 
 ### Core Skills
-<span class="badge">Compensation & Benefits</span>
-<span class="badge">Employee Services</span>
-<span class="badge">Onboarding</span>
-<span class="badge">Internal Communications</span>
-<span class="badge">Excel (dashboards)</span>
+<span class="badge gradient">Compensation & Benefits</span>
+<span class="badge mint">Employee Services</span>
+<span class="badge lav">Onboarding</span>
+<span class="badge peach">Internal Communications</span>
+<span class="badge gold">Excel (dashboards)</span>
 <span class="badge">Time Management</span>
 <span class="badge">Problem-Solving</span>
 <span class="badge">Teamwork</span>
