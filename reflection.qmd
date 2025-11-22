@@ -1,15 +1,14 @@
 ---
-title: "Reflection — LLM Use (300–500 words)"
+title: "Reflection — LLM Use"
 ---
 
-*Date:* 2025-10-22  
-*Model(s):* ChatGPT (LLM)
+<section class="soft-hero reveal reveal-up">
+  <h2>Reflection — LLM Use (300–500 words)</h2>
+  <p><em>Date:</em> Oct 22, 2025 · <em>Model(s):</em> ChatGPT</p>
 
-**What worked better as I added pages.**  
-Expanding to a multi-page structure clarified what belongs on each page and reduced cognitive load on the reader. The navbar gave me a stable mental model—Home for quick context, Resume for depth, Projects for evidence, Skills/Certs for proof, and Contact for calls-to-action. Using an LLM helped me brainstorm section labels, write first drafts fast, and surface alternative phrasings. The biggest win was idea-generation and rewording; it saved time and helped me keep a consistent tone across pages.
+  <p><strong>What worked better as I added pages.</strong> Expanding to a multi-page structure clarified what belongs on each page and reduced cognitive load on the reader. The navbar gave me a stable mental model—Home for quick context, Resume for depth, Projects for evidence, Skills/Certs for proof, and Contact for calls-to-action. Using an LLM helped me brainstorm section labels, write first drafts fast, and surface alternative phrasings. The biggest win was idea-generation and rewording; it saved time and helped me keep a consistent tone across pages.</p>
 
-**Ensuring authenticity and accuracy.**  
-I treated the LLM’s output as a *starting point*, never as the source of truth. I replaced general phrasing with my real data: titles, dates, responsibilities, and the exact tools I used. I verified every claim against my resume and coursework, removed anything that sounded generic or unearned, and added context from my own experience—especially metrics and outcomes where I had them. I also included an Appendix that stores the prompts and the unedited LLM drafts to make the AI contribution transparent.
+  <p><strong>Ensuring authenticity and accuracy.</strong> I treated the LLM’s output as a starting point, never as the source of truth. I replaced general phrasing with my real data: titles, dates, responsibilities, and the exact tools I used. I verified every claim against my resume and coursework, removed anything that sounded generic or unearned, and added context from my own experience—especially metrics and outcomes where I had them. I also included an Appendix that stores the prompts and the unedited LLM drafts to make the AI contribution transparent.</p>
 
-**What I’d improve next.**  
-I will add richer evidence (links to PDFs, brief case write-ups), collect concrete metrics for my highlights, and refine accessibility (alt text, heading order, contrast). I also plan to experiment with another theme and add a simple site search. Overall, the multi-page site feels more professional and scannable; the LLM is most helpful for brainstorming and polishing, while accuracy and voice are my responsibility.
+  <p><strong>What I’d improve next.</strong> I will add richer evidence (links to PDFs, brief case write-ups), collect concrete metrics for my highlights, and refine accessibility (alt text, heading order, contrast). I also plan to experiment with another theme and add a simple site search. Overall, the multi-page site feels more professional and scannable; the LLM is most helpful for brainstorming and polishing, while accuracy and voice are my responsibility.</p>
+</section>

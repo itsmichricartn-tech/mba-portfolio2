@@ -3,20 +3,23 @@ title: "Contact"
 body-classes: contact
 ---
 
-::: {.soft-hero .reveal .reveal-up}
-## Get in touch
+<section class="soft-hero reveal reveal-up">
+  <h2>Get in touch</h2>
 
-::: {.reveal .reveal-up style="--delay:120ms"}
-📍 Vancouver, BC, Canada  
-✉️ [itsmichricartn@gmail.com](mailto:itsmichricartn@gmail.com){aria-label="Email Michelle Ricart"}  
-🔗 [LinkedIn](https://www.linkedin.com/in/michelle-marie-ricart-naranjo-042628199/){target="_blank" rel="noopener" aria-label="Open Michelle's LinkedIn in a new tab"}
-:::
+  <p class="reveal reveal-up" style="--delay:120ms;">
+    📍 Vancouver, BC, Canada<br>
+    ✉️ <a href="mailto:itsmichricartn@gmail.com" aria-label="Email Michelle Ricart">itsmichricartn@gmail.com</a><br>
+    🔗 <a href="https://www.linkedin.com/in/michelle-marie-ricart-naranjo-042628199/" target="_blank" rel="noopener">LinkedIn</a>
+  </p>
 
-::: {.reveal .reveal-up style="--delay:220ms; display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem"}
-[Download Resume (PDF)](MichelleRicart_Resume.pdf){.btn .btn-primary target="_blank" rel="noopener" download}
-[Email me](mailto:itsmichricartn@gmail.com?subject=Contact%20from%20MBA%20portfolio&body=Hi%20Michelle,%20I%27d%20like%20to%20connect%20about...){.btn .btn-outline-secondary aria-label="Write me an email now"}
-[View LinkedIn](https://www.linkedin.com/in/michelle-marie-ricart-naranjo-042628199/)
-:::
+  <div class="reveal reveal-up" style="--delay:220ms; display:flex; gap:.5rem; flex-wrap:wrap;">
+    <a class="btn btn-primary" href="MichelleRicart_Resume.pdf" target="_blank" rel="noopener" download>Download Resume (PDF)</a>
+    <a class="btn btn-outline-secondary" href="mailto:itsmichricartn@gmail.com?subject=Contact%20from%20MBA%20portfolio&body=Hi%20Michelle,%20I%27d%20like%20to%20connect%20about..." aria-label="Write me an email now">Email me</a>
+    <a class="btn btn-outline-secondary" href="https://www.linkedin.com/in/michelle-marie-ricart-naranjo-042628199/" target="_blank" rel="noopener">View LinkedIn</a>
+  </div>
 
-::: {.reveal .reveal-up style="--delay:320ms; margin-top:1rem"}
-:::
+  <p class="reveal reveal-up" style="--delay:320ms; margin-top:1rem;">
+    Prefer a quick intro? Send me a short note with your topic and availability — I’ll get back to you promptly.
+  </p>
+</section>
+
