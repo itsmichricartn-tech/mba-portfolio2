@@ -4211,45 +4211,27 @@ Below are selected projects. Each includes a short overview, my role, and outcom
 
 
 </main> <!-- /main -->
-// scripts.js — revela elementos al hacer scroll (animaciones suaves)
-
-document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
-
-  const els = document.querySelectorAll(&quot;.reveal&quot;);
-
-  const io = new IntersectionObserver((entries) =&gt; {
-
-    entries.forEach((e) =&gt; {
-
+<script>// scripts.js — revela elementos al hacer scroll (animaciones suaves)
+document.addEventListener("DOMContentLoaded", () => {
+  const els = document.querySelectorAll(".reveal");
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
       if (e.isIntersecting) {
-
-        e.target.classList.add(&quot;is-visible&quot;);
-
+        e.target.classList.add("is-visible");
         io.unobserve(e.target);
-
       }
-
     });
-
   }, { threshold: 0.12 });
 
-
-
-  els.forEach((el, i) =&gt; {
-
+  els.forEach((el, i) => {
     // escalona la entrada automáticamente (stagger)
-
-    if (!el.style.getPropertyValue(&quot;--delay&quot;)) {
-
-      el.style.setProperty(&quot;--delay&quot;, (i * 60) + &quot;ms&quot;);
-
+    if (!el.style.getPropertyValue("--delay")) {
+      el.style.setProperty("--delay", (i * 60) + "ms");
     }
-
     io.observe(el);
-
   });
-
 });
+</script>
 
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -4652,19 +4634,6 @@ document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>© 2025 Michelle Marie Ricart</p>
-</div>   
-    <div class="nav-footer-center">
-       
-    </div>
-    <div class="nav-footer-right">
-<p>Built with Quarto</p>
-</div>
-  </div>
-</footer>
 
 
 

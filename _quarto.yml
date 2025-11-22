@@ -3,6 +3,7 @@ project:
   output-dir: .
   resources:
     - scripts.js
+    - includes/scripts.html
 
 website:
   title: "Michelle Marie Ricart — MBA Portfolio"
@@ -24,9 +25,6 @@ website:
         href: reflection.qmd
       - text: Appendix
         href: appendix.qmd
-  page-footer:
-    left: "© 2025 Michelle Marie Ricart"
-    right: "Built with Quarto"
   reader-mode: true
 
 format:
@@ -37,4 +35,5 @@ format:
     smooth-scroll: true
     anchor-sections: true
     embed-resources: true
-    include-after-body: scripts.js   
+    include-after-body: includes.html  
+

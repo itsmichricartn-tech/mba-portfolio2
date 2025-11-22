@@ -2,10 +2,6 @@
 title: "Contact"
 body-classes: contact
 ---
----
-title: "Contact"
-body-classes: contact
----
 
 <section class="soft-hero reveal reveal-up">
   <h2>Get in touch</h2>
@@ -37,5 +33,3 @@ body-classes: contact
     Prefer a quick intro? Send me a short note with your topic and availability — I’ll get back to you promptly.
   </p>
 </section>
-
-

@@ -5,7 +5,6 @@ pagetitle: "Michelle Marie Ricart — MBA Portfolio"
 image: headshot.jpg
 ---
 
-<div class="hero">
 <section class="soft-hero reveal reveal-up">
   <div style="display:flex; gap:1rem; align-items:center;">
     <img src="headshot.jpg" alt="Professional headshot of Michelle Marie Ricart" class="headshot" />
@@ -60,3 +59,4 @@ image: headshot.jpg
     <li>Ongoing personal brand and career development using Quarto.</li>
   </ul>
 </div>
+
