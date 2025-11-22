@@ -1,18 +1,48 @@
-/* ===== Pastel MBA mini-theme ===== */
+/* ===== Pastel MBA theme — full color across pages ===== */
 :root{
-  --brand-primary:#6C7CFF;
-  --brand-accent:#F6B8D5;
+  --brand-primary:#6C7CFF;  /* indigo pastel */
+  --brand-pink:#F6B8D5;     /* rosa pastel */
+  --brand-lav:#D6D9FF;      /* lavanda */
+  --brand-mint:#BDE8D9;     /* menta */
+  --brand-peach:#FFD6C9;    /* durazno */
+  --brand-gold:#FFE7A1;     /* dorado suave */
+
   --bg-soft:#F7F7FB;
   --surface:#FFFFFF;
   --ring:#E6EAFD;
   --ink:#1F2937;
+
   --radius:20px;
   --shadow:0 16px 40px rgba(31,41,55,.07);
 }
 
 html,body{ background:var(--bg-soft); color:var(--ink); }
 
-/* Navbar */
+/* ===== Global page gradients (cada página cambia colores con body-classes) */
+body{
+  /* colores por defecto (home) */
+  --c1: rgba(108,124,255,.26);  /* indigo */
+  --c2: rgba(246,184,213,.26);  /* pink  */
+}
+body.resume   { --c1: rgba(214,217,255,.30); --c2: rgba(189,232,217,.30); } /* lav + mint */
+body.projects { --c1: rgba(255,214,201,.30); --c2: rgba(108,124,255,.22); } /* peach + indigo */
+body.skills   { --c1: rgba(189,232,217,.30); --c2: rgba(255,231,161,.30); } /* mint + gold  */
+body.contact  { --c1: rgba(246,184,213,.30); --c2: rgba(214,217,255,.30); } /* pink + lav   */
+body.reflection{--c1: rgba(255,231,161,.30); --c2: rgba(108,124,255,.22);} /* gold + indigo*/
+body.appendix { --c1: rgba(214,217,255,.22); --c2: rgba(214,217,255,.12); } /* sutil       */
+
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(1100px 800px at 12% 14%, var(--c1), transparent 60%),
+    radial-gradient(900px 700px at 86% 68%, var(--c2), transparent 60%),
+    var(--bg-soft);
+}
+
+/* ===== Navbar pastel */
 .navbar{
   background: linear-gradient(90deg, #5F73FF, #9DAAFE);
   box-shadow: 0 4px 24px rgba(0,0,0,.05);
@@ -20,43 +50,65 @@ html,body{ background:var(--bg-soft); color:var(--ink); }
 .navbar .navbar-brand, .navbar .nav-link{ color:#fff !important; }
 .navbar .nav-link.active, .navbar .nav-link:hover{ color:#fff !important; }
 
-/* Secciones suaves */
-.soft-hero{
-  background:
-    radial-gradient(900px 900px at 12% 20%, rgba(159,172,255,.25), transparent 60%),
-    radial-gradient(900px 900px at 88% 60%, rgba(246,184,213,.25), transparent 60%),
-    var(--surface);
+/* ===== Secciones suaves / tarjetas */
+.soft-hero,.card,.section-card{
+  background: var(--surface);
   border:1px solid var(--ring);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 2rem clamp(1rem,2vw,2rem);
+  padding: 1.25rem clamp(1rem,2vw,2rem);
   margin: 1rem 0 1.25rem 0;
 }
+.card.lift:hover{ transform: translateY(-2px); box-shadow:0 20px 44px rgba(31,41,55,.10); }
 
-/* Foto redonda/tamaño fijo */
+/* ===== Headings con subrayado degradado */
+h2,h3{ position:relative; scroll-margin-top: 90px; }
+h2::after{
+  content:""; position:absolute; left:0; bottom:-10px; height:6px; width:82px; border-radius:9999px;
+  background: linear-gradient(90deg, var(--brand-primary), var(--brand-pink));
+}
+body.resume   h2::after{ background: linear-gradient(90deg, var(--brand-lav), var(--brand-mint)); }
+body.projects h2::after{ background: linear-gradient(90deg, var(--brand-peach), var(--brand-primary)); }
+body.skills   h2::after{ background: linear-gradient(90deg, var(--brand-mint), var(--brand-gold)); }
+body.contact  h2::after{ background: linear-gradient(90deg, var(--brand-pink), var(--brand-lav)); }
+body.reflection h2::after{ background: linear-gradient(90deg, var(--brand-gold), var(--brand-primary)); }
+
+/* ===== Foto redonda y pequeña (siempre) */
 .headshot{
   width:148px; height:148px; object-fit:cover; border-radius:9999px;
   display:block; margin:0 auto 1rem auto; border:6px solid #fff;
   box-shadow:0 10px 30px rgba(0,0,0,.06), 0 0 0 8px var(--ring);
 }
 
-/* Botones */
+/* ===== Botones */
 .btn{ border-radius:9999px; padding:.62rem 1.05rem; font-weight:600; }
 .btn-primary{ background:var(--brand-primary); border-color:var(--brand-primary); }
 .btn-primary:hover{ background:#4E5FE6; border-color:#4E5FE6; }
 .btn-outline-secondary{ color:var(--brand-primary); border-color:var(--brand-primary); }
 .btn-outline-secondary:hover{ color:#fff; background:var(--brand-primary); }
 
-/* Badges (forzamos colores para evitar texto invisible) */
+/* ===== Badges/Chips (Core Skills) — pastel & legibles */
 .badge{
-  display:inline-block; padding:.42rem .65rem; margin:.2rem .25rem 0 0;
-  border-radius:9999px; font-weight:600; font-size:.9rem;
+  display:inline-block; padding:.42rem .65rem; margin:.25rem .35rem .1rem 0;
+  border-radius:9999px; font-weight:600; font-size:.92rem;
   background: rgba(108,124,255,.12) !important;
   color:#334155 !important;
   border:1px solid #E5E7EB !important;
 }
 
-/* Fallback animaciones: que el contenido SIEMPRE se vea */
+/* ===== Timeline (si usas .timeline-item) */
+.timeline-item{
+  background: var(--surface); border:1px solid var(--ring);
+  border-radius:14px; padding:1rem 1.25rem; margin:.85rem 0;
+  box-shadow: var(--shadow);
+}
+
+/* ===== TOC y enlaces */
+.toc .nav-link.active{ background: rgba(108,124,255,.12); border-radius:10px; }
+a{ color:#4E5FE6; }
+a:hover{ color:#3D4BD8; }
+
+/* ===== Animaciones: contenido siempre visible si JS no carga */
 .reveal { opacity: 1; transform: none; }
 .js .reveal { opacity: 0; transform: translateY(10px); transition: opacity .55s, transform .55s; }
 .js .reveal.visible { opacity: 1; transform: none; }

@@ -1,3 +1,8 @@
+---
+title: "Home"
+body-classes: home
+---
+
 ::: {.soft-hero .reveal .reveal-up}
 ![](headshot.jpg){.headshot width=148 height=148 fig-alt="Professional headshot of Michelle Marie Ricart"}
 

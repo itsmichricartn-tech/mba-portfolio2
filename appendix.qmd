@@ -1,5 +1,6 @@
 ---
 title: "Appendix — LLM Site Map & Drafts"
+body-classes: appendix
 ---
 
 > This appendix stores the LLM prompts, site map, and section drafts used for Assignment 3. I edited the website content for accuracy and my own voice.

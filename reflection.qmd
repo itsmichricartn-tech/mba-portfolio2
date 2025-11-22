@@ -1,5 +1,6 @@
 ---
-title: "Reflection — LLM Use"
+title: "Reflection"
+body-classes: reflection
 ---
 
 <section class="soft-hero reveal reveal-up">
