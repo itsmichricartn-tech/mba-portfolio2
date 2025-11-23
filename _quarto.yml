@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs   # <- cambiamos a 'docs' para que GitHub Pages lo soporte fácil
 
 website:
   title: "Michelle Marie Ricart — MBA Portfolio"
@@ -17,17 +17,14 @@ website:
         text: Skills & Certifications
       - href: contact.qmd
         text: Contact
-      - href: reflection.qmd
-        text: Reflection
-      - href: appendix.qmd
-        text: Appendix
 
 format:
   html:
     theme: litera
-    css: styles.scss
+    css: styles.css
     toc: true
     toc-location: right
     include-after-body: includes/scripts.html
+
 
 
